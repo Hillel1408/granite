@@ -24,7 +24,23 @@ body.lock {
         padding: 0 16px;
     }
 }
+.btn {
+    color: white;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 23 / 17 * 100%;
+    padding: 12px 28px;
+    background: #be8256;
+    border-radius: 4px;
+    display: inline-block;
+}
+.main-flex {
+    display: flex;
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
 
 @import './sections/header';
 @import './sections/slider';
+@import './sections/sidebar';
 @import './sections/footer';
