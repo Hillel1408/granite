@@ -45,6 +45,11 @@ body.lock {
     line-height: 140%;
     color: #1e1e1e;
 }
+.small-text {
+    font-size: 15px;
+    line-height: 135%;
+    color: #1e1e1e;
+}
 .content {
     width: 1002 / 1292 * 100%;
 }
@@ -54,10 +59,24 @@ body.lock {
     line-height: 48 / 36 * 100%;
     color: black;
 }
+.more-link {
+    color: #be8256;
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    &:before {
+        position: absolute;
+        right: -25px;
+        transform: rotate(-90deg);
+    }
+}
 
 @import './sections/header';
 @import './sections/slider';
 @import './sections/sidebar';
 @import './sections/about-us';
 @import './sections/best-offer';
+@import './sections/advantages';
+@import './sections/works';
 @import './sections/footer';

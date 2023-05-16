@@ -10,18 +10,6 @@
     & > p {
         margin-bottom: 16px;
     }
-    a {
-        color: #be8256;
-        position: relative;
-        display: flex;
-        align-items: center;
-        width: fit-content;
-        &:before {
-            position: absolute;
-            right: -25px;
-            transform: rotate(-90deg);
-        }
-    }
     &-icons {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;

@@ -1,0 +1,38 @@
+.advantages {
+    &-grid {
+        margin-top: 40px;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        &-item {
+            padding: 20px 24px;
+            background-color: #fcf8f6;
+            display: flex;
+            flex-direction: column;
+            gap: 27px;
+            & > div {
+                flex: 1 1 auto;
+            }
+            &.span-2 {
+                grid-column: span 2;
+            }
+            &.span-3 {
+                grid-column: span 3;
+            }
+            h5 {
+                font-weight: 700;
+                font-size: 17px;
+                line-height: 23 / 17 * 100%;
+                color: black;
+                margin-bottom: 6px;
+            }
+            i {
+                text-align: right;
+                &:before {
+                    font-size: 76px;
+                    color: #be8256;
+                }
+            }
+        }
+    }
+}
