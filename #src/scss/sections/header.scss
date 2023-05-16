@@ -1,9 +1,9 @@
 .header {
-    padding: 9px 0;
-    border-bottom: 1px solid #e5e5eb;
     &-contacts {
         display: flex;
         justify-content: space-between;
+        border-bottom: 1px solid #e5e5eb;
+        padding: 9px 0;
         & > div:first-child {
             display: flex;
             gap: 32px;
@@ -93,5 +93,103 @@
     }
     &-block {
         padding: 16px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &__text {
+            font-weight: 700;
+            max-width: 231px;
+        }
+        & > div:first-child {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+    }
+    &__search {
+        position: relative;
+        input {
+            width: 360px;
+            height: 40px;
+            border: 1px solid #e5e5eb;
+            border-radius: 4px;
+            padding: 0 16px;
+            &::placeholder {
+                font-size: 14px;
+                line-height: 19 / 14 * 100%;
+                color: #76767a;
+            }
+        }
+        button {
+            position: absolute;
+            background-color: transparent;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            &:before {
+                font-size: 24px;
+                color: #9898a0;
+            }
+        }
+    }
+    &-buttons {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        button {
+            color: #76767a;
+            background-color: transparent;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            &:before {
+                font-size: 20px;
+                color: #9898a0;
+                margin-bottom: 2px;
+            }
+        }
+    }
+    &__btn {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 19 / 14 * 100%;
+        color: #be8256;
+        padding: 9px 12px;
+        border: 1px solid #be8256;
+        border-radius: 4px;
+        background-color: transparent;
+    }
+    &-nav {
+        background: #403636;
+        &-container {
+            display: flex;
+            gap: 18px;
+        }
+        &__btn {
+            background-color: #be8256;
+            padding: 12px 20px 10px 20px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: white;
+            font-size: 16px;
+            line-height: 21 / 16 * 100%;
+            img {
+                margin-bottom: 2px;
+            }
+        }
+        &__list {
+            display: flex;
+            &-link {
+                display: flex;
+                align-items: center;
+                height: 100%;
+                padding: 0 12px;
+                color: #ffffff;
+                opacity: 0.8;
+                font-size: 16px;
+                line-height: 21 / 16 * 100%;
+            }
+        }
     }
 }
