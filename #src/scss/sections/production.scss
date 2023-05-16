@@ -1,3 +1,13 @@
 .production {
     margin-top: 70px;
+    img {
+        margin-top: 40px;
+        width: 100%;
+    }
+    &-text {
+        margin-top: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
 }

@@ -1,0 +1,44 @@
+.price-works {
+    margin-top: 70px;
+    &-order {
+        margin-top: 40px;
+        padding: 40px 50px;
+        background: #fcf8f6 url('../img/img-10.jpg');
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+    &__text {
+        font-weight: 600;
+        font-size: 19px;
+        line-height: 140%;
+        color: #1e1e1e;
+        margin-top: 13px;
+        margin-bottom: 48px;
+    }
+    &-content {
+        margin-top: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        margin-left: 7px;
+        margin-top: 12px;
+        &-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            &:before {
+                content: '';
+                display: inline-block;
+                width: 6px;
+                height: 6px;
+                background-color: #be8256;
+                border-radius: 50%;
+            }
+        }
+    }
+}

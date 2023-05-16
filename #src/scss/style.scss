@@ -44,6 +44,21 @@ body.lock {
     font-size: 17px;
     line-height: 140%;
     color: #1e1e1e;
+    &.quote {
+        padding: 4px 0 4px 24px;
+        font-weight: 600;
+        position: relative;
+        &:before {
+            content: '';
+            display: block;
+            width: 4px;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-color: #be8256;
+        }
+    }
 }
 .small-text {
     font-size: 15px;
@@ -57,6 +72,12 @@ body.lock {
     font-weight: 700;
     font-size: 36px;
     line-height: 48 / 36 * 100%;
+    color: black;
+}
+.sub-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40 / 30 * 100%;
     color: black;
 }
 .more-link {
@@ -80,4 +101,5 @@ body.lock {
 @import './sections/advantages';
 @import './sections/works';
 @import './sections/production';
+@import './sections/price-works';
 @import './sections/footer';
