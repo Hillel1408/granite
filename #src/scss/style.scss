@@ -38,9 +38,26 @@ body.lock {
     display: flex;
     padding-top: 70px;
     padding-bottom: 100px;
+    gap: 80px;
+}
+.text {
+    font-size: 17px;
+    line-height: 140%;
+    color: #1e1e1e;
+}
+.content {
+    width: 1002 / 1292 * 100%;
+}
+.title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48 / 36 * 100%;
+    color: black;
 }
 
 @import './sections/header';
 @import './sections/slider';
 @import './sections/sidebar';
+@import './sections/about-us';
+@import './sections/best-offer';
 @import './sections/footer';

@@ -6,3 +6,11 @@ const swiper = new Swiper('.slider', {
         prevEl: '.slider__swiper-button-prev',
     },
 });
+const bestOfferSwiper = new Swiper('.best-offer-slider', {
+    direction: 'horizontal',
+    slidesPerView: 1,
+    navigation: {
+        nextEl: '.best-offer__swiper-button-next',
+        prevEl: '.best-offer__swiper-button-prev',
+    },
+});
