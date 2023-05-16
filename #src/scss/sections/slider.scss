@@ -1,0 +1,28 @@
+.slider {
+    &-slide {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    &-content {
+        padding: 70px 0 137px 0;
+        background: #f2f5fd;
+        &-wrapper {
+            max-width: 645px;
+            margin-left: auto;
+            padding-right: 41px;
+        }
+        h1 {
+            font-weight: 700;
+            font-size: 44px;
+            line-height: 115%;
+            color: black;
+            margin-bottom: 12px;
+        }
+        p {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 120%;
+            color: black;
+        }
+    }
+}
