@@ -1,0 +1,16 @@
+@import 'fonts';
+@import 'icons';
+
+$minWidth: 1280;
+$maxWidth: 1920;
+$md1: 1280;
+
+$fontFamily: 'Poppins', sans-serif;
+
+@import 'null';
+
+body.lock {
+    overflow: hidden;
+}
+
+@import './sections/footer';
