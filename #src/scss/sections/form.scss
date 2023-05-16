@@ -1,0 +1,55 @@
+.form {
+    margin-top: 70px;
+    padding: 40px;
+    background-color: #f5f5f7;
+    display: flex;
+    gap: 10 / 920 * 100%;
+    &-text {
+        padding-right: 50px;
+        width: 410 / 920 * 100%;
+        &-block {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            p {
+                span {
+                    font-weight: 600;
+                    a {
+                        color: #1e1e1e;
+                    }
+                }
+            }
+        }
+    }
+    &__title {
+        margin-bottom: 20px;
+    }
+    &-button-block {
+        margin-top: 12px;
+        display: flex;
+        gap: 20px;
+        p {
+            font-size: 13px;
+            line-height: 125%;
+            color: #949496;
+        }
+    }
+    form {
+        width: 500 / 920 * 100%;
+        padding: 24px 32px 32px 32px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        input {
+            width: 100%;
+            padding: 14px 2px;
+            border-bottom: 1px solid #e5e5eb;
+            &::placeholder {
+                font-size: 17px;
+                line-height: 140%;
+                color: #76767a;
+            }
+        }
+    }
+}
