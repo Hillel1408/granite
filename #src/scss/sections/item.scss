@@ -24,10 +24,12 @@
         margin-bottom: 12px;
     }
     &__title {
-        font-weight: 600;
-        font-size: 15px;
-        line-height: 130%;
-        color: black;
+        a {
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 130%;
+            color: black;
+        }
         margin-bottom: 24px;
     }
     &__price {
