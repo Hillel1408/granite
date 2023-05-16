@@ -1,16 +1,28 @@
 @import 'fonts';
 @import 'icons';
 
-$minWidth: 1280;
+$minWidth: 320;
 $maxWidth: 1920;
-$md1: 1280;
+$maxWidthContainer: 1292;
+$md1: $maxWidthContainer + 32;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 575.98;
 
-$fontFamily: 'Poppins', sans-serif;
+$fontFamily: 'Segoe UI', sans-serif;
 
 @import 'null';
 
 body.lock {
     overflow: hidden;
 }
+.container {
+    max-width: $maxWidthContainer + px;
+    margin: 0 auto;
+    @media (max-width: ($md1+px)) {
+        max-width: none;
+        padding: 0 16px;
+    }
+}
 
-@import './sections/footer';
+@import './sections/header';
