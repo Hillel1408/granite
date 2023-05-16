@@ -1,0 +1,36 @@
+.services {
+    margin-top: 70px;
+    &-flex {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+    &__title {
+        margin-bottom: 40px;
+    }
+    &-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 24px;
+        &__text {
+            font-weight: 600;
+        }
+        &-item {
+            span {
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                background-color: #fcf8f6;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 8px;
+                &::before {
+                    font-size: 27px;
+                    color: #be8256;
+                }
+            }
+        }
+    }
+}
