@@ -34,4 +34,7 @@
             color: #1e1e1e;
         }
     }
+    @media (max-width: 768px) {
+        display: none;
+    }
 }
