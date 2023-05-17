@@ -43,6 +43,10 @@ body.lock {
     @media (max-width: 1100px) {
         gap: 30px;
     }
+    @media (max-width: 576px) {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
 }
 .text {
     font-size: 17px;
@@ -83,6 +87,10 @@ body.lock {
     font-size: 36px;
     line-height: 48 / 36 * 100%;
     color: black;
+    @media (max-width: 576px) {
+        font-size: 22px;
+        line-height: 29 / 22 * 100%;
+    }
 }
 .sub-title {
     font-weight: 700;
