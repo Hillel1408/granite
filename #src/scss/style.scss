@@ -112,6 +112,10 @@ body.lock {
     font-size: 44px;
     line-height: 59 / 44 * 100%;
     color: black;
+    @media (max-width: 576px) {
+        font-size: 30px;
+        line-height: 130%;
+    }
 }
 .more-link {
     color: #be8256;

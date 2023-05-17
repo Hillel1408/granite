@@ -1,6 +1,9 @@
 .about-company {
     &__title {
         margin-bottom: 48px;
+        @media (max-width: 576px) {
+            margin-bottom: 24px;
+        }
     }
     &__text-bg {
         padding: 22px 28px 28px 28px;
@@ -11,5 +14,9 @@
         display: flex;
         gap: 20px;
         flex-direction: column;
+        @media (max-width: 576px) {
+            gap: 16px;
+            margin-bottom: 24px;
+        }
     }
 }
