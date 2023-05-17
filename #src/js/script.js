@@ -19,4 +19,10 @@ const bestOfferSwiper = new Swiper('.best-offer-slider', {
         nextEl: '.best-offer__swiper-button-next',
         prevEl: '.best-offer__swiper-button-prev',
     },
+    enabled: false,
+    breakpoints: {
+        576: {
+            enabled: true,
+        },
+    },
 });

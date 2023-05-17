@@ -16,6 +16,12 @@
             padding-left: 0;
             padding-right: 0;
         }
+        .swiper-wrapper {
+            @media (max-width: 576px) {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
     }
     &-slide {
         display: grid !important;
@@ -23,6 +29,7 @@
         row-gap: 20px;
         @media (max-width: 576px) {
             grid-template-columns: 1fr 1fr;
+            row-gap: 10px;
         }
     }
     &__swiper-buttons {
