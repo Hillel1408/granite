@@ -13,6 +13,9 @@ $fontFamily: 'Segoe UI', sans-serif;
 
 @import 'null';
 
+html {
+    scroll-behavior: smooth;
+}
 body.lock {
     overflow: hidden;
     position: relative;
