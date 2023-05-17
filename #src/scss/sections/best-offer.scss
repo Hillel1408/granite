@@ -1,4 +1,5 @@
 .best-offer {
+    position: relative;
     &-slider {
         padding-top: 40px;
         overflow: hidden;
@@ -12,5 +13,29 @@
         display: grid !important;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         row-gap: 20px;
+    }
+    &__swiper-buttons {
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translateY(50%);
+        display: flex;
+        gap: 20px;
+    }
+    &__swiper-button-prev {
+        cursor: pointer;
+        display: inline-block;
+        transform: rotate(-180deg) translateY(1.5px);
+        &:before {
+            color: #9898a0;
+            font-size: 20px;
+        }
+    }
+    &__swiper-button-next {
+        cursor: pointer;
+        &:before {
+            color: #9898a0;
+            font-size: 20px;
+        }
     }
 }

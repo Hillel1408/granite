@@ -1,8 +1,46 @@
 .slider {
     overflow: hidden;
+    position: relative;
     &-slide {
         display: grid !important;
         grid-template-columns: 1fr 1fr;
+    }
+    &-buttons {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        position: absolute;
+        bottom: 45px;
+        left: calc(100vw / 2 - 650px);
+        z-index: 3;
+    }
+    &__swiper-button-prev {
+        transform: rotate(-180deg) translateY(-0.3px);
+        display: flex;
+        cursor: pointer;
+        &:before {
+            color: #9898a0;
+            font-size: 18px;
+        }
+    }
+    &__swiper-button-next {
+        display: flex;
+        cursor: pointer;
+        &:before {
+            color: #9898a0;
+            font-size: 18px;
+        }
+    }
+    &__swiper {
+        &-scrollbar {
+            position: static;
+            background: #dfcbbc;
+            height: 2px;
+            width: 48px;
+            .swiper-scrollbar-drag {
+                background: #be8256;
+            }
+        }
     }
     &-content {
         padding: 70px 0 137px 0;

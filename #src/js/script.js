@@ -5,6 +5,12 @@ const swiper = new Swiper('.slider', {
         nextEl: '.slider__swiper-button-next',
         prevEl: '.slider__swiper-button-prev',
     },
+    scrollbar: {
+        el: '.slider__swiper-scrollbar',
+        draggable: true,
+        snapOnRelease: true,
+        dragSize: 'auto',
+    },
 });
 const bestOfferSwiper = new Swiper('.best-offer-slider', {
     direction: 'horizontal',

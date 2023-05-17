@@ -15,6 +15,7 @@ $fontFamily: 'Segoe UI', sans-serif;
 
 body.lock {
     overflow: hidden;
+    position: relative;
 }
 .container {
     max-width: $maxWidthContainer + px;
@@ -92,6 +93,33 @@ body.lock {
         transform: rotate(-90deg);
     }
 }
+.cost-calculation {
+    padding: 23px 23px 20px 23px;
+    background: #ffffff;
+    width: 120px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 12px 0px 0px 12px;
+    position: fixed;
+    right: 0;
+    top: 50vh;
+    z-index: 5;
+    transform: translateY(-50%);
+    cursor: pointer;
+    span {
+        display: block;
+        margin-bottom: 5px;
+        &:before {
+            font-size: 18px;
+            color: #be8256;
+        }
+    }
+    p {
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 17px;
+        color: black;
+    }
+}
 
 @import './sections/header';
 @import './sections/slider';
@@ -106,3 +134,4 @@ body.lock {
 @import './sections/services';
 @import './sections/form';
 @import './sections/footer';
+@import './sections/go-top';
