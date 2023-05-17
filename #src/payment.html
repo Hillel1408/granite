@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>granite</title>
+        <meta charset="UTF-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="shortcut icon" href="favicon.ico" />
+        <!-- <meta name="robots" content="noindex, nofollow"> -->
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    </head>
+    <body class="body">
+        <!--@@include('./html/header.html')-->
+        <main class="main">
+            <div class="main-flex container">
+                @@include('./html/sidebar.html')
+                <section class="content">
+                    <h1 class="main-title payment__title">Варианты оплаты</h1>
+                    <div class="payment-block">
+                        <p class="text">
+                            Оплата осуществляется при заключении договора в
+                            офисе, выездному менеджеру или на расчетный счет
+                            компании (при удаленном оформлении заказа). Система
+                            оплаты авансовая – 50% в день заключения договора и
+                            50% в день установки и доставки. При полной оплате
+                            заказа мы предоставляем скидку на все товары в
+                            размере 5%.
+                        </p>
+                    </div>
+                    <div class="payment-block">
+                        <h2 class="sub-title">Оплата наличными</h2>
+                        <p class="text">
+                            Оплата наличными осуществляется в офисе или
+                            выездному менеджеру. В качестве подтверждения оплаты
+                            к договору прикрепляется квитанция к
+                            приходно-кассовому ордеру. При авансовой системе
+                            расчета, вторая часть по договору оплачивается
+                            бригаде установщиков и также подкрепляется
+                            квитанцией об оплате.
+                        </p>
+                    </div>
+                    <div class="payment-block">
+                        <h2 class="sub-title">Оплата банковской картой</h2>
+                        <p class="text">
+                            Оплата банковской картой (Visa, Mastercard)
+                            осуществляется только в нашем офисе. При авансовой
+                            системе расчета следует учитывать, что вторая часть
+                            оплаты вносится наличными в день установки/доставки,
+                            либо безналичным расчетом.
+                        </p>
+                    </div>
+                    <div class="payment-block">
+                        <h2 class="sub-title">Безналичный расчет</h2>
+                        <p class="text">
+                            Безналичный расчет осуществляется путем перевода на
+                            расчетный счет компании. Он указывается в договоре,
+                            а также представлен на сайте в разделе реквизиты.
+                            Эта система оплаты используется и при оформлении
+                            удаленных заказов через интернет.
+                        </p>
+                    </div>
+                    @@include('./html/form.html')
+                </section>
+            </div>
+            @@include('./html/go-top.html')
+        </main>
+        @@include('./html/footer.html')
+        <script src="js/swiper-bundle.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
