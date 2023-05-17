@@ -1,5 +1,8 @@
 .sidebar {
-    flex: 0 0 210px;
+    width: 210 / 1292 * 100%;
+    @media (max-width: 1100px) {
+        width: 260 / 1292 * 100%;
+    }
     &__list {
         &-item {
             padding: 13px 0;
@@ -34,7 +37,7 @@
             color: #1e1e1e;
         }
     }
-    @media (max-width: 768px) {
+    @media (max-width: 900px) {
         display: none;
     }
 }

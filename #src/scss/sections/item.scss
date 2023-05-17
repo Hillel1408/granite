@@ -4,16 +4,23 @@
     margin-left: 10px;
     margin-right: 10px;
     background-color: white;
+    @media (max-width: 576px) {
+        padding: 12px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
     &-wrapper {
         position: relative;
-        &:hover {
-            .item {
-                box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.15);
-                position: absolute;
-                z-index: 2;
-            }
-            .item-buttons {
-                display: flex;
+        @media (min-width: 576px) {
+            &:hover {
+                .item {
+                    box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.15);
+                    position: absolute;
+                    z-index: 2;
+                }
+                .item-buttons {
+                    display: flex;
+                }
             }
         }
     }
@@ -22,6 +29,10 @@
         width: 100%;
         object-fit: cover;
         margin-bottom: 12px;
+        @media (max-width: 576px) {
+            height: 172px;
+            margin-bottom: 8px;
+        }
     }
     &__title {
         a {
@@ -29,14 +40,24 @@
             font-size: 15px;
             line-height: 130%;
             color: black;
+            @media (max-width: 576px) {
+                font-size: 13px;
+                line-height: 130%;
+            }
         }
         margin-bottom: 24px;
+        @media (max-width: 576px) {
+            margin-bottom: 4px;
+        }
     }
     &__price {
         font-weight: 700;
         font-size: 24px;
         line-height: 130%;
         color: black;
+        @media (max-width: 576px) {
+            font-size: 18px;
+        }
     }
     &-buttons {
         margin-top: 12px;
