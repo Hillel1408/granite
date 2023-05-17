@@ -9,7 +9,7 @@
         padding-right: 10px;
         padding-bottom: 70px;
         @media (max-width: 576px) {
-            padding-top: 28px;
+            padding-top: 16px;
             padding-bottom: 24px;
             margin-left: -5px;
             margin-right: -5px;
@@ -33,9 +33,7 @@
         display: flex;
         gap: 20px;
         @media (max-width: 576px) {
-            font-size: 12px;
-            top: 22px;
-            left: 0;
+            display: none;
         }
     }
     &__swiper-button-prev {
@@ -45,9 +43,6 @@
         &:before {
             color: #9898a0;
             font-size: 20px;
-            @media (max-width: 576px) {
-                font-size: 16px;
-            }
         }
     }
     &__swiper-button-next {
@@ -55,9 +50,6 @@
         &:before {
             color: #9898a0;
             font-size: 20px;
-            @media (max-width: 576px) {
-                font-size: 16px;
-            }
         }
     }
 }
