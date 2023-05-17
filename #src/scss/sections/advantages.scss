@@ -1,4 +1,8 @@
 .advantages {
+    margin-bottom: 70px;
+    @media (max-width: 576px) {
+        margin-bottom: 24px;
+    }
     &-grid {
         margin-top: 40px;
         display: grid;

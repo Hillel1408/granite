@@ -107,6 +107,12 @@ body.lock {
         line-height: 29 / 22 * 100%;
     }
 }
+.main-title {
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 59 / 44 * 100%;
+    color: black;
+}
 .more-link {
     color: #be8256;
     position: relative;
@@ -119,38 +125,12 @@ body.lock {
         transform: rotate(-90deg);
     }
 }
-.cost-calculation {
-    padding: 23px 23px 20px 23px;
-    background: #ffffff;
-    width: 120px;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
-    border-radius: 12px 0px 0px 12px;
-    position: fixed;
-    right: 0;
-    top: 50vh;
-    z-index: 5;
-    transform: translateY(-50%);
-    cursor: pointer;
-    span {
-        display: block;
-        margin-bottom: 5px;
-        &:before {
-            font-size: 18px;
-            color: #be8256;
-        }
-    }
-    p {
-        font-weight: 600;
-        font-size: 13px;
-        line-height: 17px;
-        color: black;
-    }
-}
 
 @import './sections/header';
 @import './sections/slider';
 @import './sections/sidebar';
 @import './sections/about-us';
+@import './sections/icons';
 @import './sections/best-offer';
 @import './sections/item';
 @import './sections/advantages';
@@ -161,3 +141,6 @@ body.lock {
 @import './sections/form';
 @import './sections/footer';
 @import './sections/go-top';
+@import './sections/cost-calculation';
+
+@import './pages/about-company';

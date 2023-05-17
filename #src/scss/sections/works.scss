@@ -1,8 +1,4 @@
 .works {
-    margin-top: 70px;
-    @media (max-width: 576px) {
-        margin-top: 24px;
-    }
     &-flex {
         display: flex;
         justify-content: space-between;

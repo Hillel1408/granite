@@ -1,0 +1,15 @@
+.about-company {
+    &__title {
+        margin-bottom: 48px;
+    }
+    &__text-bg {
+        padding: 22px 28px 28px 28px;
+        background: #fcf8f6;
+    }
+    &-block {
+        margin-bottom: 40px;
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+    }
+}

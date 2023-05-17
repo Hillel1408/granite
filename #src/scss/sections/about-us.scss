@@ -15,43 +15,13 @@
             line-height: 29 / 22 * 100%;
         }
     }
+    a {
+        margin-bottom: 40px;
+    }
     & > p {
         margin-bottom: 16px;
         @media (max-width: 576px) {
             margin-bottom: 8px;
-        }
-    }
-    &-icons {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        gap: 26px;
-        margin-top: 40px;
-        @media (max-width: 576px) {
-            margin-top: 16px;
-        }
-        &-item {
-            display: flex;
-            gap: 16px;
-            align-items: center;
-            @media (max-width: 576px) {
-                gap: 12px;
-            }
-            p {
-                font-weight: 600;
-            }
-            i {
-                min-width: 60px;
-                height: 60px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border-radius: 50%;
-                background-color: #fcf8f6;
-                &:before {
-                    font-size: 32px;
-                    color: #be8256;
-                }
-            }
         }
     }
 }
