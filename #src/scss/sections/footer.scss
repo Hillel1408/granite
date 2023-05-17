@@ -52,12 +52,23 @@
                 font-size: 15px;
                 line-height: 20 / 15 * 100%;
                 color: white;
+                transition: all 0.4s;
+                &:hover {
+                    color: #be8256;
+                }
             }
             &-dots {
                 padding-left: 25px;
                 li {
                     list-style-type: disc;
                     color: white;
+                    transition: all 0.4s;
+                    &:hover {
+                        color: #be8256;
+                        a {
+                            color: #be8256;
+                        }
+                    }
                 }
             }
         }
@@ -113,6 +124,14 @@
             font-size: 20px;
             color: white;
             margin-bottom: 4px;
+            transition: all 0.4s;
+        }
+        transition: all 0.4s;
+        &:hover {
+            color: #be8256;
+            &::before {
+                color: #be8256;
+            }
         }
     }
     &__email {
@@ -157,6 +176,10 @@
             gap: 24px;
             a {
                 text-decoration: underline;
+                transition: all 0.4s;
+                &:hover {
+                    color: #be8256;
+                }
             }
             @media (max-width: 576px) {
                 flex-direction: column;
