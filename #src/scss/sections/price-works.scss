@@ -45,23 +45,6 @@
         }
     }
     &__list {
-        display: flex;
-        flex-direction: column;
-        gap: 4px;
-        margin-left: 7px;
         margin-top: 12px;
-        &-item {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            &:before {
-                content: '';
-                display: inline-block;
-                width: 6px;
-                height: 6px;
-                background-color: #be8256;
-                border-radius: 50%;
-            }
-        }
     }
 }
