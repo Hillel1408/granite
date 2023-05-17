@@ -1,11 +1,25 @@
 .price-works {
     margin-top: 70px;
+    @media (max-width: 576px) {
+        margin-top: 24px;
+    }
     &-order {
         margin-top: 40px;
         padding: 40px 50px;
         background: #fcf8f6 url('../img/img-10.jpg');
         background-repeat: no-repeat;
         background-position: right;
+        background-size: contain;
+        @media (max-width: 940px) {
+            background: #fcf8f6 url('../img/img-11.jpg');
+            background-repeat: no-repeat;
+            background-position: right;
+            background-size: contain;
+        }
+        @media (max-width: 576px) {
+            padding: 17px 20px;
+            margin-top: 16px;
+        }
     }
     &__text {
         font-weight: 600;
@@ -14,12 +28,21 @@
         color: #1e1e1e;
         margin-top: 13px;
         margin-bottom: 48px;
+        @media (max-width: 576px) {
+            font-size: 16px;
+            line-height: 140%;
+            margin-top: 4px;
+            margin-bottom: 20px;
+        }
     }
     &-content {
         margin-top: 24px;
         display: flex;
         flex-direction: column;
         gap: 16px;
+        @media (max-width: 576px) {
+            margin-top: 12px;
+        }
     }
     &__list {
         display: flex;

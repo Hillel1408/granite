@@ -34,6 +34,11 @@ body.lock {
     background: #be8256;
     border-radius: 4px;
     display: inline-block;
+    @media (max-width: 576px) {
+        font-size: 15px;
+        line-height: 20 / 15 * 100%;
+        padding: 10px 24px;
+    }
 }
 .main-flex {
     display: flex;
