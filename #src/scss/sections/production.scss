@@ -1,13 +1,23 @@
 .production {
     margin-top: 70px;
+    @media (max-width: 576px) {
+        margin-top: 24px;
+    }
     img {
         margin-top: 40px;
         width: 100%;
+        @media (max-width: 576px) {
+            margin-top: 16px;
+        }
     }
     &-text {
         margin-top: 24px;
         display: flex;
         flex-direction: column;
         gap: 16px;
+        @media (max-width: 576px) {
+            margin-top: 12px;
+            gap: 12px;
+        }
     }
 }
