@@ -4,6 +4,10 @@
     &-slide {
         display: grid !important;
         grid-template-columns: 1fr 1fr;
+        position: relative;
+        @media (max-width: 1100px) {
+            grid-template-columns: 1fr;
+        }
     }
     &-buttons {
         display: flex;
@@ -13,6 +17,9 @@
         bottom: 45px;
         left: calc(100vw / 2 - 650px);
         z-index: 3;
+        @media (max-width: ($md1+px)) {
+            left: 16px;
+        }
     }
     &__swiper-button-prev {
         transform: rotate(-180deg) translateY(-0.3px);
@@ -21,6 +28,9 @@
         &:before {
             color: #9898a0;
             font-size: 18px;
+            @media (max-width: 1100px) {
+                color: white;
+            }
         }
     }
     &__swiper-button-next {
@@ -29,6 +39,9 @@
         &:before {
             color: #9898a0;
             font-size: 18px;
+            @media (max-width: 1100px) {
+                color: white;
+            }
         }
     }
     &__swiper {
@@ -43,12 +56,28 @@
         }
     }
     &-content {
-        padding: 70px 0 137px 0;
+        padding: 70px 0 137px 16px;
         background: #f2f5fd;
+        @media (max-width: 1100px) {
+            background: linear-gradient(
+                    0deg,
+                    rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5)
+                ),
+                url(image.png);
+            position: relative;
+            z-index: 2;
+        }
+        @media (max-width: 576px) {
+            padding: 24px 16px 88px 16px;
+        }
         &-wrapper {
             max-width: 645px;
             margin-left: auto;
             padding-right: 41px;
+            @media (max-width: 1100px) {
+                max-width: none;
+            }
         }
         h2 {
             font-weight: 700;
@@ -56,6 +85,15 @@
             line-height: 115%;
             color: black;
             margin-bottom: 12px;
+            @media (max-width: 1100px) {
+                font-size: 34px;
+                color: white;
+            }
+            @media (max-width: 576px) {
+                font-size: 26px;
+                line-height: 115%;
+                margin-bottom: 8px;
+            }
         }
         p {
             font-weight: 600;
@@ -63,6 +101,13 @@
             line-height: 120%;
             color: black;
             margin-bottom: 30px;
+            @media (max-width: 1100px) {
+                color: white;
+            }
+            @media (max-width: 576px) {
+                font-size: 16px;
+                margin-bottom: 18px;
+            }
         }
     }
     &-img {
@@ -70,6 +115,11 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+        }
+        @media (max-width: 1100px) {
+            position: absolute;
+            width: 100%;
+            height: 100%;
         }
     }
 }
