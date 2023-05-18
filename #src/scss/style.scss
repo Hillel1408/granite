@@ -152,7 +152,7 @@ body.lock {
 .list {
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 8px;
     margin-left: 7px;
     &-item {
         display: flex;
@@ -161,7 +161,7 @@ body.lock {
         &:before {
             content: '';
             display: inline-block;
-            width: 6px;
+            min-width: 6px;
             height: 6px;
             background-color: #be8256;
             border-radius: 50%;
@@ -189,3 +189,4 @@ body.lock {
 @import './pages/about-company';
 @import './pages/payment';
 @import './pages/our-production';
+@import './pages/guarantee';
