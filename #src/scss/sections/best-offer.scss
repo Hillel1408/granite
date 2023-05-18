@@ -43,20 +43,14 @@
             display: none;
         }
     }
-    &__swiper-button-prev {
-        cursor: pointer;
-        display: inline-block;
-        transform: rotate(-180deg) translateY(1.5px);
-        &:before {
-            color: #9898a0;
-            font-size: 20px;
-        }
-    }
+    &__swiper-button-prev,
     &__swiper-button-next {
         cursor: pointer;
-        &:before {
-            color: #9898a0;
-            font-size: 20px;
+        display: inline-block;
+        svg {
+            path {
+                fill: #9898a0;
+            }
         }
     }
 }

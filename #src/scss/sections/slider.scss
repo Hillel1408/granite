@@ -21,26 +21,16 @@
             left: 16px;
         }
     }
-    &__swiper-button-prev {
-        transform: rotate(-180deg) translateY(-0.3px);
-        display: flex;
-        cursor: pointer;
-        &:before {
-            color: #9898a0;
-            font-size: 18px;
-            @media (max-width: 1100px) {
-                color: white;
-            }
-        }
-    }
+    &__swiper-button-prev,
     &__swiper-button-next {
         display: flex;
         cursor: pointer;
-        &:before {
-            color: #9898a0;
-            font-size: 18px;
-            @media (max-width: 1100px) {
-                color: white;
+        svg {
+            path {
+                stroke: #9898a0;
+                @media (max-width: 1100px) {
+                    stroke: white;
+                }
             }
         }
     }
