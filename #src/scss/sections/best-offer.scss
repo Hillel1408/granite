@@ -25,7 +25,7 @@
     }
     &-slide {
         display: grid !important;
-        grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
         row-gap: 20px;
         @media (max-width: 576px) {
             grid-template-columns: 1fr 1fr;

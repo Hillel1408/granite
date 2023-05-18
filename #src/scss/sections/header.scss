@@ -279,9 +279,21 @@
     }
     &-nav {
         background: #403636;
+        position: relative;
+        overflow-y: auto;
         &-container {
             display: flex;
             gap: 18px;
+        }
+        &__close-btn {
+            display: none;
+            background-color: transparent;
+            @media (max-width: 576px) {
+                display: block;
+                position: absolute;
+                top: 20px;
+                right: 26px;
+            }
         }
         &__btn {
             background-color: #be8256;
@@ -315,7 +327,18 @@
                 line-height: 21 / 16 * 100%;
                 @media (max-width: 576px) {
                     color: black;
+                    font-weight: 600;
+                    font-size: 17px;
+                    padding: 0;
                 }
+            }
+            @media (max-width: 576px) {
+                width: 100%;
+                flex-direction: column;
+                padding: 33px 0 32px 0;
+                margin: 0 14px;
+                row-gap: 29px;
+                border-bottom: 1px solid #e5e5eb;
             }
         }
         @media (max-width: 576px) {
@@ -325,6 +348,10 @@
             z-index: 4;
             background-color: white;
             transform: translateX(-100%);
+            padding-bottom: 90px;
+            &.open {
+                transform: translateX(0);
+            }
         }
     }
 }
