@@ -38,7 +38,7 @@
             }
         }
     }
-    a img {
+    img:not(.item__sale) {
         height: 260px;
         width: 100%;
         object-fit: cover;
