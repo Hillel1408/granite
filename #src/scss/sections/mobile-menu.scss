@@ -22,8 +22,12 @@
             flex-direction: column;
             gap: 2px;
             align-items: center;
+            justify-content: space-between;
             &:before {
                 font-size: 24px;
+            }
+            svg {
+                margin-top: 3px;
             }
         }
     }
