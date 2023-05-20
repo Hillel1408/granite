@@ -1,6 +1,6 @@
 <div class="item-wrapper">
     <div class="item">
-        <a href="#"><img src="img/img-2.jpg" alt="" /></a>
+        <img src="img/img-2.jpg" alt="" />
         <div class="item__title">
             <a href="">Вертикальный памятник на могилу ВГ-В-01</a>
         </div>
@@ -9,5 +9,8 @@
             <button class="item__btn icon-11"></button>
             <button class="btn icon-12 item__btn-2">В корзину</button>
         </div>
+        @@if (sale === 'true') {
+        <img class="item__sale" src="img/img-23.png" alt="" />
+        }
     </div>
 </div>

@@ -1,0 +1,55 @@
+.catalog {
+    &__title {
+        margin-bottom: 48px;
+        @media (max-width: 576px) {
+            margin-bottom: 24px;
+        }
+    }
+    &__sub-title {
+        margin-bottom: 12px;
+    }
+    &-grid {
+        margin-bottom: 40px;
+        margin-top: 32px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
+        row-gap: 20px;
+        @media (max-width: 576px) {
+            grid-template-columns: 1fr 1fr;
+            row-gap: 10px;
+        }
+    }
+    &-sort {
+        margin-top: 40px;
+        display: flex;
+        gap: 24px;
+        button {
+            background-color: transparent;
+            font-size: 15px;
+            line-height: 130%;
+            color: #76767a;
+            &.active {
+                color: #be8256;
+            }
+        }
+        &__price-btn {
+            position: relative;
+            padding-right: 20px;
+            display: flex;
+            align-items: center;
+            &::before {
+                transform: rotate(90deg);
+                display: block;
+                position: absolute;
+                font-size: 12px;
+                right: 0;
+            }
+        }
+    }
+    &-block {
+        margin-top: 48px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}

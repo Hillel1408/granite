@@ -9,6 +9,16 @@
         margin-left: 5px;
         margin-right: 5px;
     }
+    &__sale {
+        position: absolute;
+        top: -10px;
+        width: 100px;
+        height: auto;
+        left: -1px;
+        @media (max-width: 576px) {
+            left: -6px;
+        }
+    }
     &-wrapper {
         position: relative;
         @media (min-width: 576px) {
@@ -21,10 +31,14 @@
                 .item-buttons {
                     display: flex;
                 }
+                .item__sale {
+                    left: -12px;
+                    top: -11px;
+                }
             }
         }
     }
-    img {
+    a img {
         height: 260px;
         width: 100%;
         object-fit: cover;
@@ -40,6 +54,7 @@
             font-size: 15px;
             line-height: 130%;
             color: black;
+            display: block;
             @media (max-width: 576px) {
                 font-size: 13px;
                 line-height: 130%;
