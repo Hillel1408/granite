@@ -52,3 +52,21 @@ headerNavBtn.addEventListener('click', function () {
             getBodyScrollTop() +
             'px';
 });
+
+const tabsItems = document.querySelectorAll('.reviews-tabs-item');
+const tabsBlock = document.querySelectorAll('.reviews-tabs-block');
+
+for (let elem of tabsItems) {
+    elem.addEventListener('click', function () {
+        for (let elem of tabsItems) {
+            elem.classList.remove('active');
+        }
+        this.classList.add('active');
+        for (let elem of tabsBlock) {
+            elem.classList.remove('active');
+            if (this.dataset.id == elem.dataset.id) {
+                elem.classList.add('active');
+            }
+        }
+    });
+}

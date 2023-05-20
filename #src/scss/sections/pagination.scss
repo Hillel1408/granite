@@ -1,0 +1,41 @@
+.pagination {
+    ul {
+        display: flex;
+        gap: 8px;
+        li {
+            cursor: pointer;
+            width: 44px;
+            height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #e5e5eb;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 130%;
+            color: #1e1e1e;
+            &.active {
+                background: #be8256;
+                color: white;
+            }
+            &.prev,
+            &.next,
+            &.more {
+                border-color: transparent;
+            }
+            &.prev,
+            &.next {
+                &:before {
+                    font-size: 24px;
+                    color: #9898a0;
+                }
+            }
+            &.prev {
+                &:before {
+                    transform: rotate(-180deg);
+                }
+            }
+        }
+    }
+}
