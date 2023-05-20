@@ -70,3 +70,17 @@ for (let elem of tabsItems) {
         }
     });
 }
+
+const headerNav = document.querySelector('.header-nav');
+const menuBtn = document.querySelector('.header__menu-btn');
+const closeBtn = document.querySelector('.header-nav__close-btn');
+
+menuBtn.addEventListener('click', function () {
+    headerNav.classList.toggle('open');
+    document.body.classList.toggle('lock');
+});
+
+closeBtn.addEventListener('click', function () {
+    headerNav.classList.toggle('open');
+    document.body.classList.toggle('lock');
+});
