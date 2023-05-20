@@ -49,6 +49,9 @@ body.lock {
 }
 .main {
     position: relative;
+    @media (max-width: 900px) {
+        position: static;
+    }
 }
 .popup {
     &.open {

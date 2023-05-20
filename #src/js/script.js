@@ -84,3 +84,11 @@ closeBtn.addEventListener('click', function () {
     headerNav.classList.toggle('open');
     document.body.classList.toggle('lock');
 });
+
+const mobileMenu = document.querySelector('.open-mobile-menu');
+const mobileSidebar = document.querySelector('.sidebar');
+
+mobileMenu.addEventListener('click', function () {
+    mobileSidebar.classList.toggle('open');
+    document.body.classList.toggle('lock');
+});
