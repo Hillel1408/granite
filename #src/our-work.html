@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>granite</title>
+        <meta charset="UTF-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="shortcut icon" href="favicon.ico" />
+        <!-- <meta name="robots" content="noindex, nofollow"> -->
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/fancyselect.css" />
+    </head>
+    <body class="body">
+        @@include('./html/header.html')
+        <main class="main">
+            <div class="main-flex container">
+                @@include('./html/sidebar.html')
+                <section class="content">
+                    <h1 class="main-title payment__title">Варианты оплаты</h1>
+                    <div>
+                        <svg
+                            style="display: none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <symbol id="icon-works" viewBox="0 0 24 24">
+                                <path
+                                    d="M11 19.5H21"
+                                    stroke="#9898A0"
+                                    stroke-width="1.5"
+                                    stroke-linejoin="round"
+                                />
+                                <path
+                                    d="M11 12.5H21"
+                                    stroke="#9898A0"
+                                    stroke-width="1.5"
+                                    stroke-linejoin="round"
+                                />
+                                <path
+                                    d="M11 5.5H21"
+                                    stroke="#9898A0"
+                                    stroke-width="1.5"
+                                    stroke-linejoin="round"
+                                />
+                                <path
+                                    d="M2.5 5L4 6.5L7 3.5"
+                                    stroke="#9898A0"
+                                    stroke-width="1.5"
+                                />
+                                <path
+                                    d="M2.5 12L4 13.5L7 10.5"
+                                    stroke="#9898A0"
+                                    stroke-width="1.5"
+                                />
+                                <path
+                                    d="M2.5 19L4 20.5L7 17.5"
+                                    stroke="#9898A0"
+                                    stroke-width="1.5"
+                                />
+                            </symbol>
+                        </svg>
+                        <select id="custom-select">
+                            <option data-icon="#icon-works">Все работы</option>
+                        </select>
+                    </div>
+                    @@include('./html/form.html')
+                </section>
+            </div>
+            @@include('./html/go-top.html') @@include('./html/mobile-menu.html')
+            <div class="popup"></div>
+        </main>
+        @@include('./html/footer.html')
+        <script src="js/swiper-bundle.min.js"></script>
+        <script type="text/javascript" src="js/fancyselect.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
