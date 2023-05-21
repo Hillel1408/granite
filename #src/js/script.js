@@ -92,3 +92,24 @@ mobileMenu.addEventListener('click', function () {
     mobileSidebar.classList.toggle('open');
     document.body.classList.toggle('lock');
 });
+
+const cartBtn = document.querySelector('.cart__form-btn');
+const popup2 = document.querySelector('.popup-2');
+const popup2Close = document.querySelector('.popup-2__close');
+const popup2Btn = document.querySelector('.popup-2__btn');
+
+cartBtn.addEventListener('click', function (e) {
+    e.preventDefault();
+    popup2.classList.toggle('open');
+    document.body.classList.toggle('lock');
+});
+
+popup2Close.addEventListener('click', function () {
+    popup2.classList.toggle('open');
+    document.body.classList.toggle('lock');
+});
+
+popup2Btn.addEventListener('click', function () {
+    popup2.classList.toggle('open');
+    document.body.classList.toggle('lock');
+});
