@@ -31,6 +31,14 @@ const productSwiper = new Swiper('.product-slider', {
     slidesPerView: 'auto',
     spaceBetween: 20,
 });
+const productSwiper2 = new Swiper('.product-slider-2', {
+    direction: 'horizontal',
+    slidesPerView: 'auto',
+});
+const productSwiper3 = new Swiper('.product-slider-3', {
+    direction: 'horizontal',
+    slidesPerView: 'auto',
+});
 
 const headerNavBtn = document.querySelector('.header-nav__btn');
 const sidebar = document.querySelector('.sidebar-wrapper');

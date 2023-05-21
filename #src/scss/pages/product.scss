@@ -16,18 +16,6 @@
             }
         }
     }
-    &__sub-title {
-        margin-bottom: 6px;
-    }
-    &-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
-        row-gap: 20px;
-        @media (max-width: 576px) {
-            grid-template-columns: 1fr 1fr;
-            row-gap: 10px;
-        }
-    }
     &-slider {
         overflow: hidden;
         &-item {
@@ -37,6 +25,16 @@
                 width: 100%;
                 object-fit: cover;
             }
+        }
+    }
+    &-slider-2,
+    &-slider-3 {
+        overflow: hidden;
+        margin-left: -15px;
+        margin-right: -15px;
+        padding: 32px 10px 70px 10px;
+        .item-wrapper {
+            max-width: 253px;
         }
     }
 }
