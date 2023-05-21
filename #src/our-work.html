@@ -18,8 +18,23 @@
             <div class="main-flex container">
                 @@include('./html/sidebar.html')
                 <section class="content">
-                    <h1 class="main-title payment__title">Варианты оплаты</h1>
-                    <div>
+                    <h1 class="main-title our-work__title">Наши работы</h1>
+                    <div class="our-work-block">
+                        <p class="text">
+                            Компания «ВАШ ГРАНИТ» за более чем 20 лет работы
+                            изготовила и установила большое количество
+                            памятников и монументов разной степени сложности и
+                            ценовой категории - от экономичных до элитных. Мы
+                            ответственно подходим к каждому этапу работы и
+                            гарантируем качество и соблюдение сроков.
+                        </p>
+                        <p class="text">
+                            В данном разделе представлена небольшая часть наших
+                            работ. С полным каталогом вы можете ознакомиться у
+                            нас в офисе или у выездного сотрудника.
+                        </p>
+                    </div>
+                    <div class="our-work__custom-select">
                         <svg
                             style="display: none"
                             xmlns="http://www.w3.org/2000/svg"
@@ -60,10 +75,69 @@
                                 />
                             </symbol>
                         </svg>
-                        <select id="custom-select">
+                        <select>
                             <option data-icon="#icon-works">Все работы</option>
+                            <option data-icon="#icon-works">2</option>
+                            <option data-icon="#icon-works">3</option>
                         </select>
                     </div>
+                    <div class="our-work-grid">
+                        <div class="our-work-grid-item">
+                            <img src="img/img-24.jpg" alt="" />
+                            <p class="small-text">
+                                Антоновское кладбище Бежицкого района г. Брянска
+                            </p>
+                        </div>
+                        <div class="our-work-grid-item">
+                            <img src="img/img-24.jpg" alt="" />
+                            <p class="small-text">
+                                Антоновское кладбище Бежицкого района г. Брянска
+                            </p>
+                        </div>
+                        <div class="our-work-grid-item">
+                            <img src="img/img-24.jpg" alt="" />
+                            <p class="small-text">
+                                Антоновское кладбище Бежицкого района г. Брянска
+                            </p>
+                        </div>
+                        <div class="our-work-grid-item">
+                            <img src="img/img-24.jpg" alt="" />
+                            <p class="small-text">
+                                Антоновское кладбище Бежицкого района г. Брянска
+                            </p>
+                        </div>
+                        <div class="our-work-grid-item">
+                            <img src="img/img-24.jpg" alt="" />
+                            <p class="small-text">
+                                Антоновское кладбище Бежицкого района г. Брянска
+                            </p>
+                        </div>
+                        <div class="our-work-grid-item">
+                            <img src="img/img-24.jpg" alt="" />
+                            <p class="small-text">
+                                Антоновское кладбище Бежицкого района г. Брянска
+                            </p>
+                        </div>
+                        <div class="our-work-grid-item">
+                            <img src="img/img-24.jpg" alt="" />
+                            <p class="small-text">
+                                Антоновское кладбище Бежицкого района г. Брянска
+                            </p>
+                        </div>
+                        <div class="our-work-grid-item">
+                            <img src="img/img-24.jpg" alt="" />
+                            <p class="small-text">
+                                Антоновское кладбище Бежицкого района г. Брянска
+                            </p>
+                        </div>
+                        <div class="our-work-grid-item">
+                            <img src="img/img-24.jpg" alt="" />
+                            <p class="small-text">
+                                Антоновское кладбище Бежицкого района г. Брянска
+                            </p>
+                        </div>
+                    </div>
+                    @@include('./html/pagination.html')
                     @@include('./html/form.html')
                 </section>
             </div>
