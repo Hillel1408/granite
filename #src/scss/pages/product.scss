@@ -28,4 +28,15 @@
             row-gap: 10px;
         }
     }
+    &-slider {
+        overflow: hidden;
+        &-item {
+            width: 320px;
+            img {
+                height: 200px;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
 }

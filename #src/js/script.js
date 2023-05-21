@@ -26,6 +26,11 @@ const bestOfferSwiper = new Swiper('.best-offer-slider', {
         },
     },
 });
+const productSwiper = new Swiper('.product-slider', {
+    direction: 'horizontal',
+    slidesPerView: 'auto',
+    spaceBetween: 20,
+});
 
 const headerNavBtn = document.querySelector('.header-nav__btn');
 const sidebar = document.querySelector('.sidebar-wrapper');
