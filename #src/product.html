@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>granite</title>
+        <meta charset="UTF-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="shortcut icon" href="favicon.ico" />
+        <!-- <meta name="robots" content="noindex, nofollow"> -->
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    </head>
+    <body class="body">
+        @@include('./html/header.html')
+        <main class="main">
+            <div class="main-flex container">
+                @@include('./html/sidebar.html')
+                <section class="content">
+                    <h1 class="main-title product__title">
+                        Вертикальный памятник на могилу ВГ-В-01
+                    </h1>
+                    <div class="product-block">
+                        <h2 class="product__sub-title sub-title">
+                            Сопутствующие товары
+                        </h2>
+                        <div class="product-grid">
+                            @@include('./html/item.html', { "sale": "false" })
+                            @@include('./html/item.html', { "sale": "false" })
+                            @@include('./html/item.html', { "sale": "false" })
+                            @@include('./html/item.html', { "sale": "false" })
+                        </div>
+                    </div>
+                    <div class="product-block">
+                        <h2 class="product__sub-title sub-title">
+                            Типы гранита для памятников
+                        </h2>
+                        <p class="text">
+                            <span>Диабаз (Карелия)</span> – Карельский гранит
+                            чёрного цвета, является самым популярным видом
+                            гранита при изготовлении памятника на могилу.Лезники
+                            (Житомирская область) — Лезниковский гранит — один
+                            из самых прочных камней в красной палитре. Гранитные
+                            памятники, изготовленные их красных пород гранита
+                            так же долговечны и прочны.
+                        </p>
+                        <p class="text">
+                            <span>Дымов (Карелия)</span> – Гранит «Дымовский»
+                            добывают на карьере, в Карелии, неподалёку
+                            от посёлка Дымово. Камень имеет яркий, насыщенный
+                            терракотовый цвет.
+                        </p>
+                        <p class="text">
+                            <span>Покост (Украина)</span> – За Покостовским
+                            гранитом закрепилась добрая слава этакого могучего
+                            нерушимого великана, коим в мире гранитов
+                            он и является. Серый однородный цвет в основе
+                            с примесями голубого, изумрудного и чёрного оттенка.
+                            Рисунок густой, перечный, нейтральный.
+                        </p>
+                        <p class="text">
+                            <span>Сюкся (Карелия)</span> – Красно-розовый гранит
+                            Сюкся назван по месту добычи, эту гранитную породу
+                            добывают в Карельской республике в месторождении
+                            СюксюЯнсаари.
+                        </p>
+                        <p class="text">
+                            <span>Масловский (Украина)</span> – Порода насыщенно
+                            зеленого или оливкового цвета. Различают
+                            также серо-чёрные оттенки Масловского гранита.
+                            Текстура камня — среднезернистая, с однородным
+                            рисунком. Этот камень по внешнему виду сравнивают
+                            с малахитом и считают достойной альтернативой
+                            редкому минералу.Для выбора оптимального материала
+                            для памятника.
+                        </p>
+                        <p class="text">
+                            Вы можете обратится к нашим специалистам. Возможны
+                            комбинации материалов, при изготовлении гранитных
+                            комплексов, памятников, столов, лавочек и ваз на
+                            могилу.
+                        </p>
+                    </div>
+                </section>
+            </div>
+            @@include('./html/go-top.html') @@include('./html/mobile-menu.html')
+            <div class="popup"></div>
+        </main>
+        @@include('./html/footer.html')
+        <script src="js/swiper-bundle.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
