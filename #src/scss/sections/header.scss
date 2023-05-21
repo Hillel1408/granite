@@ -256,6 +256,21 @@
                 color: #9898a0;
                 margin-bottom: 2px;
             }
+            &.icon-8 {
+                position: relative;
+                span {
+                    position: absolute;
+                    background: #f92627;
+                    border-radius: 20px;
+                    padding: 2px 5.5px;
+                    color: white;
+                    font-weight: 700;
+                    font-size: 11px;
+                    line-height: 15px;
+                    top: -11px;
+                    left: 5px;
+                }
+            }
         }
         @media (max-width: 900px) {
             display: none;
