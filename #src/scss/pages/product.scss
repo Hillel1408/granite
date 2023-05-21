@@ -16,6 +16,9 @@
             }
         }
     }
+    &__sub-title {
+        margin-bottom: 6px;
+    }
     &-slider {
         overflow: hidden;
         &-item {
@@ -32,7 +35,7 @@
         overflow: hidden;
         margin-left: -15px;
         margin-right: -15px;
-        padding: 32px 10px 70px 10px;
+        padding: 26px 10px 70px 10px;
         .item-wrapper {
             max-width: 253px;
         }
