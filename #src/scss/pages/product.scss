@@ -282,13 +282,13 @@
                     font-size: 17px;
                     line-height: 130%;
                     color: #1e1e1e;
-                    padding-top: 24px;
-                    padding-bottom: 24px;
+                    padding-top: 17px;
+                    padding-bottom: 17px;
                     @media (max-width: 576px) {
                         font-size: 15px;
                         line-height: 130%;
-                        padding-top: 19px;
-                        padding-bottom: 19px;
+                        padding-top: 12px;
+                        padding-bottom: 12px;
                     }
                     span {
                         font-weight: 700;
@@ -319,8 +319,8 @@
             border: none;
             tr {
                 td {
-                    padding-top: 16px;
-                    padding-bottom: 16px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
                 }
             }
         }
