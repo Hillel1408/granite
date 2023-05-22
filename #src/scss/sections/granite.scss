@@ -1,0 +1,45 @@
+.granite {
+    &-images {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+        column-gap: 14px;
+        row-gap: 12px;
+        @media (max-width: 576px) {
+            column-gap: 8px;
+            row-gap: 8px;
+        }
+        label > input {
+            visibility: hidden;
+            position: absolute;
+        }
+        label > p {
+            font-size: 14px;
+            line-height: 130%;
+            color: #1e1e1e;
+            margin-top: 4px;
+            @media (max-width: 576px) {
+                margin-top: 2px;
+            }
+        }
+        label > input + span {
+            transition: 0.1s;
+            cursor: pointer;
+            display: inline-block;
+            height: 112px;
+            width: 100%;
+            @media (max-width: 576px) {
+                height: 104px;
+            }
+            img {
+                height: 100%;
+                object-fit: cover;
+                width: 100%;
+            }
+        }
+        label > input:checked + span {
+            border: 2px solid #be8256;
+            border-radius: 4px;
+            padding: 8px;
+        }
+    }
+}
