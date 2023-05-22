@@ -1,0 +1,109 @@
+.calculation-modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all 0.8s ease 0s;
+    z-index: 100;
+    &.open {
+        opacity: 1;
+        visibility: visible;
+    }
+    &.open &-content {
+        transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
+        opacity: 1;
+    }
+    &-body {
+        min-height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.8s ease 0s;
+        padding: 16px 0;
+    }
+    &-content {
+        transition: all 0.8s ease 0s;
+        opacity: 0;
+        padding: 43px 55px;
+        transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+        width: 800px;
+        background: white;
+        position: relative;
+    }
+    &__close {
+        position: absolute;
+        right: 12px;
+        top: 12px;
+        cursor: pointer;
+    }
+    &__sub-title {
+        margin-bottom: 48px;
+    }
+    &-buttons {
+        display: flex;
+        gap: 16px;
+    }
+    &__btn {
+        border: 1px solid #be8256;
+        border-radius: 4px;
+        background-color: transparent;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:before {
+            font-size: 24px;
+            transform: rotate(-180deg);
+        }
+    }
+    &-flex {
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 40px;
+        flex-wrap: wrap;
+    }
+    &-progress {
+        width: 360px;
+        height: 2px;
+        background: #e5e5eb;
+        position: relative;
+        &-block {
+            width: 72px;
+            height: 2px;
+            background: #be8256;
+            position: absolute;
+            left: 0;
+        }
+    }
+    &__small-text {
+        font-size: 14px;
+        line-height: 19px;
+        color: #949496;
+        margin-bottom: 3px;
+    }
+    &-step {
+        h2 {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 27px;
+            color: black;
+            margin-bottom: 20px;
+        }
+        input {
+            height: 50px;
+            width: 100%;
+            border: 1px solid #e5e5eb;
+            border-radius: 4px;
+            padding-left: 20px;
+        }
+    }
+}
