@@ -52,19 +52,31 @@
                 flex-direction: column;
                 margin-top: 0;
                 gap: 24px;
+                padding: 20px 24px 24px 24px;
                 .form-text {
                     width: 100%;
+                }
+                .form__title {
+                    margin-bottom: 16px;
                 }
                 form {
                     width: 100%;
                     .form-button-block {
                         flex-direction: column;
+                        button {
+                            background-color: transparent;
+                            border: 1px solid #be8256;
+                            color: #000000;
+                        }
                     }
                 }
             }
         }
         & > div:last-child {
             width: 490 / 1000 * 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
         }
     }
     &-img {
@@ -114,6 +126,78 @@
                 width: 100%;
                 height: 176px;
                 object-fit: cover;
+            }
+        }
+    }
+    &__price {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 130%;
+        color: black;
+    }
+    &__buttons {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
+    &__btn {
+        border: 1px solid #e5e5eb;
+        border-radius: 4px;
+        background-color: transparent;
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 130%;
+        color: #76767a;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 14px;
+        &:before {
+            font-size: 24px;
+            order: 1;
+        }
+    }
+    &-table {
+        width: 100%;
+        margin-top: 16px;
+        border-collapse: collapse;
+        thead {
+            tr {
+                td {
+                    font-weight: 600;
+                    font-size: 15px;
+                    line-height: 130%;
+                    text-transform: uppercase;
+                    color: #76767a;
+                    padding-top: 18px;
+                    padding-bottom: 18px;
+                }
+            }
+        }
+        tbody {
+            border-top: 1px solid #e5e5eb;
+            border-bottom: 1px solid #e5e5eb;
+            tr {
+                transition: 0.3s;
+                td {
+                    font-size: 17px;
+                    line-height: 130%;
+                    color: #1e1e1e;
+                    padding-top: 24px;
+                    padding-bottom: 24px;
+                    span {
+                        font-weight: 700;
+                    }
+                    label {
+                        margin-left: 18px;
+                        margin-top: 3px;
+                    }
+                }
+                &:hover {
+                    background: #fcf8f6;
+                    border-radius: 4px;
+                }
             }
         }
     }
