@@ -17,7 +17,13 @@ const calculationProgressBlock = document.querySelector(
 const calculationTime = document.querySelector('.calculation-modal-time div');
 const calculationThanks = document.querySelector('.calculation-modal-thanks');
 const calculationContent = document.querySelector('.calculation-modal-content');
+
 let count = 0;
+
+const func = (item1, item2) => {
+    item1.style.display = 'none';
+    item2.style.display = 'block';
+};
 
 const formElement = document.querySelector('.calculation-form');
 formElement.addEventListener('submit', async (e) => {
@@ -27,8 +33,7 @@ formElement.addEventListener('submit', async (e) => {
             method: 'POST',
             body: new FormData(formElement),
         });
-        calculationForm.style.display = 'none';
-        calculationThanks.style.display = 'block';
+        func(calculationForm, calculationThanks);
         calculationContent.style.transition = 'none';
         calculationContent.style.width = '400px';
     } catch (err) {
@@ -39,19 +44,16 @@ formElement.addEventListener('submit', async (e) => {
 const showStepBlock = (flag) => {
     if (flag) {
         if (count == 4) {
-            calculationStepsBlock.style.display = 'none';
-            calculationProgress2.style.display = 'block';
+            func(calculationStepsBlock, calculationProgress2);
             setTimeout(() => {
                 calculationProgress2.style.display = 'none';
                 calculationForm.style.display = 'grid';
             }, 4200);
         } else {
-            calculationSteps[count].style.display = 'none';
-            calculationSteps[count + 1].style.display = 'block';
+            func(calculationSteps[count], calculationSteps[count + 1]);
         }
     } else {
-        calculationSteps[count].style.display = 'none';
-        calculationSteps[count - 1].style.display = 'block';
+        func(calculationSteps[count], calculationSteps[count - 1]);
     }
 };
 
@@ -81,11 +83,14 @@ const calculationModalClose = document.querySelector(
     '.calculation-modal__close'
 );
 
-costCalculation.addEventListener('click', function () {
+const calculationToggle = () => {
     calculationModal.classList.toggle('open');
     document.body.classList.toggle('lock');
+};
+
+costCalculation.addEventListener('click', function () {
+    calculationToggle();
 });
 calculationModalClose.addEventListener('click', function () {
-    calculationModal.classList.toggle('open');
-    document.body.classList.toggle('lock');
+    calculationToggle();
 });
