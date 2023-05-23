@@ -96,7 +96,11 @@
                     </div>
                 </div>
             </div>
-            <div class="calculation-modal-step" data-step="3">
+            <div
+                class="calculation-modal-step"
+                style="display: none"
+                data-step="3"
+            >
                 <h2>Требуется ли обустройство места захоронения?</h2>
                 <div class="calculation-modal-grid-2">
                     <div class="calculation-modal-radio">
@@ -119,6 +123,75 @@
                             value="value-6"
                         />
                         <label for="value-6">Да, требуется</label>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="calculation-modal-step"
+                style="display: none"
+                data-step="4"
+            >
+                <h2>Какой гранит вам больше подходит?</h2>
+                @@include('./granite.html')
+            </div>
+            <div class="calculation-modal-step" data-step="4">
+                <h2>Требуются ли дополнительные услуги?</h2>
+                <div class="calculation-modal-grid">
+                    <div>
+                        <img src="img/img-39.jpg" alt="" />
+                        <div class="calculation-modal-radio">
+                            <label class="custom-checkbox">
+                                <input
+                                    type="checkbox"
+                                    name="value-1"
+                                    value="value-1"
+                                />
+                                <span></span>
+                                Гравировка фото
+                            </label>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="img/img-40.jpg" alt="" />
+                        <div class="calculation-modal-radio">
+                            <label class="custom-checkbox">
+                                <input
+                                    type="checkbox"
+                                    name="value-2"
+                                    value="value-2"
+                                />
+                                <span></span>
+                                Фото на стекле
+                            </label>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="img/img-41.jpg" alt="" />
+                        <div class="calculation-modal-radio">
+                            <label class="custom-checkbox">
+                                <input
+                                    type="checkbox"
+                                    name="value-3"
+                                    value="value-3"
+                                />
+                                <span></span>
+                                Фото на керамике
+                            </label>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="img/img-42.jpg" alt="" />
+                        <div class="calculation-modal-radio">
+                            <label class="custom-checkbox">
+                                <input
+                                    type="checkbox"
+                                    name="value-4"
+                                    value="value-4"
+                                />
+                                <span></span>
+                                Цветник
+                            </label>
+                        </div>
                     </div>
                 </div>
             </div>

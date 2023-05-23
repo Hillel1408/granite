@@ -141,4 +141,12 @@
             align-items: center;
         }
     }
+    [data-step='4'] {
+        .granite-images {
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            label > input + span {
+                height: 173.5px;
+            }
+        }
+    }
 }
