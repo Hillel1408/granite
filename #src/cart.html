@@ -235,11 +235,18 @@
                         <button class="btn">Оформить заказ</button>
                     </div>
                     <form class="cart__form" action="#">
-                        <label>* Имя<input type="text" name="name" /></label>
                         <label
-                            >* Фамилия<input type="text" name="surname"
+                            >* Имя<input type="text" name="name" required
                         /></label>
-                        <label>* Телефон<input type="tel" name="tel" /></label>
+                        <label
+                            >* Фамилия<input
+                                type="text"
+                                name="surname"
+                                required
+                        /></label>
+                        <label
+                            >* Телефон<input type="tel" name="tel" required
+                        /></label>
                         <label
                             >Комментарий к заказу (если есть)
                             <textarea name="comments"></textarea>
