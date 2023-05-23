@@ -274,16 +274,13 @@
         <script src="https://unpkg.com/imask"></script>
         <script src="js/swiper-bundle.min.js"></script>
         <script src="js/script.js"></script>
+        <script src="js/phone-mask.js"></script>
         <script>
             const cartBtn = document.querySelector('.cart__form-btn');
             const popup2 = document.querySelector('.popup-2');
             const popup2Close = document.querySelector('.popup-2__close');
             const popup2Btn = document.querySelector('.popup-2__btn');
-            const phoneInput = document.querySelector('.phone-input');
 
-            const phoneMask = new IMask(phoneInput, {
-                mask: '+{7}(000)000-00-00',
-            });
             const toggleModal = () => {
                 popup2.classList.toggle('open');
                 document.body.classList.toggle('lock');
