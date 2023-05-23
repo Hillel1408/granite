@@ -121,6 +121,16 @@
             }
         }
     }
+    &-grid-2 {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+        & > div {
+            padding: 15px 22px;
+            border: 1px solid #e5e5eb;
+            border-radius: 4px;
+        }
+    }
     &-radio {
         label {
             font-weight: 600;
