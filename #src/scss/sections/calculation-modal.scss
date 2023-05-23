@@ -160,6 +160,9 @@
             border: 1px solid #e5e5eb;
             border-radius: 4px;
         }
+        @media (max-width: 576px) {
+            gap: 12px;
+        }
     }
     &-radio {
         label {
@@ -169,6 +172,10 @@
             display: flex;
             gap: 6px;
             align-items: center;
+            @media (max-width: 576px) {
+                font-size: 13px;
+                line-height: 17px;
+            }
         }
     }
     [data-step='4'] {

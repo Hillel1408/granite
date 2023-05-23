@@ -70,6 +70,27 @@
         font-size: 24px;
         line-height: 130%;
         color: black;
+        &-sale {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 130%;
+            color: #949496;
+            text-decoration: line-through;
+            margin-bottom: 3px;
+            @media (max-width: 576px) {
+                font-size: 13px;
+                line-height: 130%;
+            }
+        }
+        &-block {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            align-items: flex-end;
+            @media (max-width: 576px) {
+                gap: 8px;
+            }
+        }
         @media (max-width: 576px) {
             font-size: 18px;
         }

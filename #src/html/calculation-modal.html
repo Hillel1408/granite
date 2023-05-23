@@ -1,4 +1,4 @@
-<div class="calculation-modal open">
+<div class="calculation-modal">
     <div class="calculation-modal-body">
         <div class="calculation-modal-content">
             <span class="calculation-modal__close">
@@ -27,11 +27,7 @@
                 <h2 class="calculation-modal__sub-title sub-title">
                     Калькулятор стоимости памятника
                 </h2>
-                <div
-                    class="calculation-modal-step"
-                    style="display: none"
-                    data-step="1"
-                >
+                <div class="calculation-modal-step" data-step="1">
                     <h2>На каком кладбище планируется установка памятника?</h2>
                     <input type="text" name="cemetery" />
                 </div>
@@ -131,7 +127,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="calculation-modal-step" data-step="4">
+                <div
+                    class="calculation-modal-step"
+                    style="display: none"
+                    data-step="4"
+                >
                     <h2>Какой гранит вам больше подходит?</h2>
                     @@include('./granite.html')
                 </div>

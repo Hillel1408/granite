@@ -4,7 +4,12 @@
         <div class="item__title">
             <a href="">Вертикальный памятник на могилу ВГ-В-01</a>
         </div>
-        <span class="item__price">20 000 ₽</span>
+        <div class="item__price-block">
+            <span class="item__price">20 000 ₽</span>
+            @@if (sale === 'true') {
+            <span class="item__price-sale">43 200 ₽</span>
+            }
+        </div>
         <div class="item-buttons">
             <button class="item__btn icon-11"></button>
             <button class="btn icon-12 item__btn-2">В корзину</button>
