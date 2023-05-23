@@ -65,7 +65,7 @@ calculationBtn.addEventListener('click', function (e) {
     }
 });
 
-calculationBtnPrev.addEventListener('click', function () {
+calculationBtnPrev.addEventListener('click', function (e) {
     e.preventDefault();
     if (count > 0) {
         showStepBlock(false);
