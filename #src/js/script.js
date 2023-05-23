@@ -30,14 +30,26 @@ const productSwiper = new Swiper('.product-slider', {
     direction: 'horizontal',
     slidesPerView: 'auto',
     spaceBetween: 20,
+    navigation: {
+        nextEl: '.product__swiper-button-next',
+        prevEl: '.product__swiper-button-prev',
+    },
 });
 const productSwiper2 = new Swiper('.product-slider-2', {
     direction: 'horizontal',
     slidesPerView: 'auto',
+    navigation: {
+        nextEl: '.product__swiper-button-next-2',
+        prevEl: '.product__swiper-button-prev-2',
+    },
 });
 const productSwiper3 = new Swiper('.product-slider-3', {
     direction: 'horizontal',
     slidesPerView: 'auto',
+    navigation: {
+        nextEl: '.product__swiper-button-next-3',
+        prevEl: '.product__swiper-button-prev-3',
+    },
 });
 
 const headerNavBtn = document.querySelector('.header-nav__btn');
