@@ -35,6 +35,9 @@
         width: 800px;
         background: white;
         position: relative;
+        @media (max-width: 576px) {
+            padding: 11px 16px 24px 16px;
+        }
     }
     &__close {
         position: absolute;
@@ -168,17 +171,27 @@
         gap: 20px;
         padding-top: 24px;
         padding-bottom: 17px;
+        @media (max-width: 576px) {
+            grid-template-columns: 1fr;
+            padding: 0;
+        }
         h3 {
             font-weight: 700;
             font-size: 24px;
             line-height: 32px;
             color: black;
             margin-bottom: 16px;
+            @media (max-width: 576px) {
+                margin-bottom: 8px;
+            }
         }
         label {
             font-size: 17px;
             line-height: 140%;
             color: #1e1e1e;
+            @media (max-width: 576px) {
+                font-size: 15px;
+            }
         }
         input {
             border: 1px solid #e5e5eb;
@@ -187,16 +200,25 @@
             height: 50px;
             margin-top: 8px;
             padding-left: 20px;
+            @media (max-width: 576px) {
+                margin-top: 6px;
+            }
         }
         & > div:last-child {
             display: flex;
             flex-direction: column;
             gap: 16px;
+            @media (max-width: 576px) {
+                gap: 12px;
+            }
         }
     }
     &__submit-btn {
         margin-top: 8px;
         margin-bottom: 12px;
+        @media (max-width: 576px) {
+            margin-bottom: 0;
+        }
     }
     &__small-text {
         font-size: 12.5px;
