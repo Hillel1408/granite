@@ -44,6 +44,10 @@
             const bestOfferHidden = document.querySelectorAll(
                 '.best-offer-slide-hidden'
             );
+            const countSlide = document.querySelector('.count-slide');
+            const sliderSlide = document.querySelectorAll('.slider-slide');
+
+            countSlide.innerText = sliderSlide.length;
 
             bestOfferBtn.addEventListener('click', function () {
                 bestOfferHidden.forEach((item) => {
