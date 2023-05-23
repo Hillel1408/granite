@@ -11,10 +11,14 @@ function getBodyScrollTop() {
     );
 }
 
+const toggle = (item) => {
+    item.classList.toggle('open');
+    document.body.classList.toggle('lock');
+};
+
 headerNavBtn.addEventListener('click', function () {
     sidebar.classList.toggle('open');
-    popup.classList.toggle('open');
-    document.body.classList.toggle('lock');
+    toggle(popup);
     if (sidebar.style.maxHeight) sidebar.style.maxHeight = null;
     else
         sidebar.style.maxHeight =
@@ -29,19 +33,16 @@ const menuBtn = document.querySelector('.header__menu-btn');
 const closeBtn = document.querySelector('.header-nav__close-btn');
 
 menuBtn.addEventListener('click', function () {
-    headerNav.classList.toggle('open');
-    document.body.classList.toggle('lock');
+    toggle(headerNav);
 });
 
 closeBtn.addEventListener('click', function () {
-    headerNav.classList.toggle('open');
-    document.body.classList.toggle('lock');
+    toggle(headerNav);
 });
 
 const mobileMenu = document.querySelector('.open-mobile-menu');
 const mobileSidebar = document.querySelector('.sidebar');
 
 mobileMenu.addEventListener('click', function () {
-    mobileSidebar.classList.toggle('open');
-    document.body.classList.toggle('lock');
+    toggle(mobileSidebar);
 });
