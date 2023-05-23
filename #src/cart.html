@@ -245,7 +245,11 @@
                                 required
                         /></label>
                         <label
-                            >* Телефон<input type="tel" name="tel" required
+                            >* Телефон<input
+                                type="tel"
+                                name="tel"
+                                class="phone-input"
+                                required
                         /></label>
                         <label
                             >Комментарий к заказу (если есть)
@@ -267,6 +271,7 @@
             <div class="popup"></div>
         </main>
         @@include('./html/footer.html')
+        <script src="https://unpkg.com/imask"></script>
         <script src="js/swiper-bundle.min.js"></script>
         <script src="js/script.js"></script>
         <script>
@@ -274,7 +279,11 @@
             const popup2 = document.querySelector('.popup-2');
             const popup2Close = document.querySelector('.popup-2__close');
             const popup2Btn = document.querySelector('.popup-2__btn');
+            const phoneInput = document.querySelector('.phone-input');
 
+            const phoneMask = new IMask(phoneInput, {
+                mask: '+{7}(000)000-00-00',
+            });
             const toggleModal = () => {
                 popup2.classList.toggle('open');
                 document.body.classList.toggle('lock');
