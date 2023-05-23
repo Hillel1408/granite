@@ -177,6 +177,12 @@
             label > input + span {
                 height: 173.5px;
             }
+            @media (max-width: 576px) {
+                grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+                label > input + span {
+                    height: 104px;
+                }
+            }
         }
     }
     &-time {
