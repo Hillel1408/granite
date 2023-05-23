@@ -28,8 +28,8 @@
                     @@include('./html/form.html')
                 </section>
             </div>
-            @@include('./html/cost-calculation.html')
             @@include('./html/go-top.html') @@include('./html/chat.html')
+            @@include('./html/cost-calculation.html')
             @@include('./html/calculation-modal.html')
             @@include('./html/mobile-menu.html')
             <div class="popup"></div>
@@ -37,5 +37,36 @@
         @@include('./html/footer.html')
         <script src="js/swiper-bundle.min.js"></script>
         <script src="js/script.js"></script>
+        <script src="js/calculation.js"></script>
+        <script>
+            const swiper = new Swiper('.slider', {
+                direction: 'horizontal',
+                slidesPerView: 1,
+                navigation: {
+                    nextEl: '.slider__swiper-button-next',
+                    prevEl: '.slider__swiper-button-prev',
+                },
+                scrollbar: {
+                    el: '.slider__swiper-scrollbar',
+                    draggable: true,
+                    snapOnRelease: true,
+                    dragSize: 'auto',
+                },
+            });
+            const bestOfferSwiper = new Swiper('.best-offer-slider', {
+                direction: 'horizontal',
+                slidesPerView: 1,
+                navigation: {
+                    nextEl: '.best-offer__swiper-button-next',
+                    prevEl: '.best-offer__swiper-button-prev',
+                },
+                enabled: false,
+                breakpoints: {
+                    576: {
+                        enabled: true,
+                    },
+                },
+            });
+        </script>
     </body>
 </html>

@@ -262,5 +262,26 @@
         @@include('./html/footer.html')
         <script src="js/swiper-bundle.min.js"></script>
         <script src="js/script.js"></script>
+        <script>
+            const cartBtn = document.querySelector('.cart__form-btn');
+            const popup2 = document.querySelector('.popup-2');
+            const popup2Close = document.querySelector('.popup-2__close');
+            const popup2Btn = document.querySelector('.popup-2__btn');
+
+            const toggle = () => {
+                popup2.classList.toggle('open');
+                document.body.classList.toggle('lock');
+            };
+            cartBtn.addEventListener('click', function (e) {
+                e.preventDefault();
+                toggle();
+            });
+            popup2Close.addEventListener('click', function () {
+                toggle();
+            });
+            popup2Btn.addEventListener('click', function () {
+                toggle();
+            });
+        </script>
     </body>
 </html>

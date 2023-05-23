@@ -93,7 +93,7 @@
         background: #e5e5eb;
         position: relative;
         &-block {
-            width: 72px;
+            width: 25%;
             height: 2px;
             background: #be8256;
             position: absolute;
@@ -199,12 +199,14 @@
         border-radius: 4px;
         margin-bottom: 130px;
         margin-top: 90px;
+        overflow: hidden;
         @media (max-width: 576px) {
             margin-top: 41px;
             margin-bottom: 60px;
         }
         & > div {
-            width: 40%;
+            width: 100%;
+            animation: bg-animation 4s ease-in-out;
             height: 100%;
             background-image: url('../img/bg.jpg');
         }
@@ -289,5 +291,13 @@
         p {
             margin-bottom: 24px;
         }
+    }
+}
+@keyframes bg-animation {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: none;
     }
 }
