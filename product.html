@@ -270,7 +270,12 @@
     </div>
     <form action="">
         <input type="text" name="name" placeholder="Ваше имя" />
-        <input type="tel" name="tel" placeholder="Телефон" />
+        <input
+            type="tel"
+            name="tel"
+            placeholder="Телефон"
+            class="phone-input"
+        />
         <div class="form-button-block">
             <button type="submit" class="btn">Отправить</button>
             <p>
@@ -444,6 +449,21 @@
         <input type="radio" name="granite" value="value-8" />
         <span><img src="img/img-34.jpg" /></span>
         <p>Покостовский</p>
+    </label>
+    <label class="granite-images-hidden">
+        <input type="radio" name="granite" value="value-9" />
+        <span><img src="img/img-27.jpg" /></span>
+        <p>Габбро-Диабаз</p>
+    </label>
+    <label class="granite-images-hidden">
+        <input type="radio" name="granite" value="value-10" />
+        <span><img src="img/img-27.jpg" /></span>
+        <p>Габбро-Диабаз</p>
+    </label>
+    <label class="granite-images-hidden">
+        <input type="radio" name="granite" value="value-11" />
+        <span><img src="img/img-27.jpg" /></span>
+        <p>Габбро-Диабаз</p>
     </label>
 </div>
 
@@ -1313,9 +1333,22 @@
     </div>
 </footer>
 
+        <script src="https://unpkg.com/imask"></script>
         <script src="js/swiper-bundle.min.js"></script>
         <script src="js/script.js"></script>
         <script>
+            const btnGranite = document.querySelector('.product-btn-granite');
+            const graniteHidden = document.querySelectorAll(
+                '.granite-images-hidden'
+            );
+
+            btnGranite.addEventListener('click', function () {
+                graniteHidden.forEach((item) => {
+                    item.style.display = 'block';
+                });
+                this.style.display = 'none';
+            });
+
             const productSwiper = new Swiper('.product-slider', {
                 direction: 'horizontal',
                 slidesPerView: 'auto',

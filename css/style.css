@@ -2963,6 +2963,9 @@ body.lock {
   border-radius: 4px;
   padding: 8px;
 }
+.granite-images-hidden {
+  display: none;
+}
 
 .calculation-modal {
   position: fixed;
