@@ -275,19 +275,19 @@
             const popup2Close = document.querySelector('.popup-2__close');
             const popup2Btn = document.querySelector('.popup-2__btn');
 
-            const toggle = () => {
+            const toggleModal = () => {
                 popup2.classList.toggle('open');
                 document.body.classList.toggle('lock');
             };
-            cartBtn.addEventListener('click', function (e) {
+            cartBtn.addEventListener('click', (e) => {
                 e.preventDefault();
-                toggle();
+                toggleModal();
             });
             popup2Close.addEventListener('click', function () {
-                toggle();
+                toggleModal();
             });
             popup2Btn.addEventListener('click', function () {
-                toggle();
+                toggleModal();
             });
         </script>
     </body>
