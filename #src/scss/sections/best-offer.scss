@@ -17,13 +17,31 @@
             }
         }
     }
+    &__btn {
+        display: none;
+        @media (max-width: 576px) {
+            display: block;
+        }
+        border: 1px solid #be8256;
+        width: 100%;
+        height: 44px;
+        font-size: 15px;
+        line-height: 130%;
+        text-transform: uppercase;
+        color: #be8256;
+        margin-bottom: 24px;
+        background-color: transparent;
+    }
     &-slide {
-        display: grid !important;
+        display: grid;
         grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
         row-gap: 20px;
         @media (max-width: 576px) {
             grid-template-columns: 1fr 1fr;
             row-gap: 10px;
+            &-hidden {
+                display: none;
+            }
         }
     }
     &__swiper-buttons {

@@ -4,12 +4,12 @@
         <title>granite</title>
         <meta charset="UTF-8" />
         <meta name="format-detection" content="telephone=no" />
-        <link rel="stylesheet" href="css/style.css" />
         <link rel="shortcut icon" href="favicon.ico" />
         <!-- <meta name="robots" content="noindex, nofollow"> -->
         <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
     </head>
     <body class="body">
         @@include('./html/header.html')
@@ -40,6 +40,18 @@
         <script src="js/script.js"></script>
         <script src="js/calculation.js"></script>
         <script>
+            const bestOfferBtn = document.querySelector('.best-offer__btn');
+            const bestOfferHidden = document.querySelectorAll(
+                '.best-offer-slide-hidden'
+            );
+
+            bestOfferBtn.addEventListener('click', function () {
+                bestOfferHidden.forEach((item) => {
+                    item.style.display = 'grid';
+                });
+                this.style.display = 'none';
+            });
+
             const swiper = new Swiper('.slider', {
                 direction: 'horizontal',
                 slidesPerView: 1,
