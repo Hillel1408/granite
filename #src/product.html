@@ -637,6 +637,18 @@
         <script src="js/swiper-bundle.min.js"></script>
         <script src="js/script.js"></script>
         <script>
+            const btnGranite = document.querySelector('.product-btn-granite');
+            const graniteHidden = document.querySelectorAll(
+                '.granite-images-hidden'
+            );
+
+            btnGranite.addEventListener('click', function () {
+                graniteHidden.forEach((item) => {
+                    item.style.display = 'block';
+                });
+                this.style.display = 'none';
+            });
+
             const productSwiper = new Swiper('.product-slider', {
                 direction: 'horizontal',
                 slidesPerView: 'auto',
