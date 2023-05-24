@@ -112,9 +112,17 @@
         display: flex;
         align-items: center;
         gap: 8px;
+        transition: all 0.4s;
         &:before {
             font-size: 20px;
             color: #000000;
+            transition: all 0.4s;
+        }
+        &:hover {
+            color: #b37142;
+            &:before {
+                color: #b37142;
+            }
         }
         @media (max-width: 840px) {
             &.icon-4 {
@@ -124,6 +132,16 @@
     }
     &__tel {
         color: #1e1e1e;
+        transition: all 0.4s;
+        &:hover {
+            color: #b37142;
+            &:before {
+                color: #b37142;
+            }
+        }
+        &:before {
+            transition: all 0.4s;
+        }
         @media (max-width: 666px) {
             font-size: 0;
             &:before {
@@ -256,6 +274,14 @@
                 font-size: 20px;
                 color: #9898a0;
                 margin-bottom: 2px;
+                transition: all 0.4s;
+            }
+            transition: all 0.4s;
+            &:hover {
+                color: #b37142;
+                &:before {
+                    color: #b37142;
+                }
             }
             &.icon-8 {
                 position: relative;
