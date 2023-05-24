@@ -133,8 +133,20 @@
 </header>
 
         <main class="main">
+            <ul class="bread-crumbs container">
+    <li>
+        <a href="">Главная</a>
+    </li>
+    <li>
+        <a href="">О компании</a>
+    </li>
+</ul>
+
             <div class="main-flex container">
                 <section class="sidebar">
+    <button class="sidebar__close-btn">
+        <img src="img/icon-3.svg" alt="" />
+    </button>
     <div class="sidebar-wrapper">
         <ul class="sidebar__list">
             <li class="sidebar__list-item">
@@ -456,6 +468,350 @@
     </ul>
 </div>
 
+            <div class="cost-calculation">
+    <span class="icon-49"></span>
+    <p>Рассчитайте стоимость памятника</p>
+</div>
+
+            <div class="calculation-modal">
+    <div class="calculation-modal-body">
+        <div class="calculation-modal-content">
+            <span class="calculation-modal__close">
+                <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                        d="M21 3L3 21"
+                        stroke="#9898A0"
+                        stroke-width="2"
+                        stroke-miterlimit="10"
+                    />
+                    <path
+                        d="M3 3L21 21"
+                        stroke="#9898A0"
+                        stroke-width="2"
+                        stroke-miterlimit="10"
+                    />
+                </svg>
+            </span>
+            <form class="calculation-form" action="">
+                <div class="calculation-modal-steps">
+                    <h2 class="calculation-modal__sub-title sub-title">
+                        Калькулятор стоимости памятника
+                    </h2>
+                    <div class="calculation-modal-step" data-step="1">
+                        <h2>
+                            На каком кладбище планируется установка памятника?
+                        </h2>
+                        <input
+                            type="text"
+                            name="cemetery"
+                            class="cemetery-input"
+                        />
+                    </div>
+                    <div
+                        class="calculation-modal-step"
+                        style="display: none"
+                        data-step="2"
+                    >
+                        <h2>Какой памятник вам требуется?</h2>
+                        <div class="calculation-modal-grid">
+                            <div>
+                                <img src="img/img-35.jpg" alt="" />
+                                <div class="calculation-modal-radio">
+                                    <input
+                                        class="custom-radio"
+                                        name="monument"
+                                        type="radio"
+                                        id="value-1"
+                                        value="value-1"
+                                        checked
+                                    />
+                                    <label for="value-1">Одинарный</label>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="img/img-36.jpg" alt="" />
+                                <div class="calculation-modal-radio">
+                                    <input
+                                        class="custom-radio"
+                                        name="monument"
+                                        type="radio"
+                                        id="value-2"
+                                        value="value-2"
+                                    />
+                                    <label for="value-2">Двойной</label>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="img/img-37.jpg" alt="" />
+                                <div class="calculation-modal-radio">
+                                    <input
+                                        class="custom-radio"
+                                        name="monument"
+                                        type="radio"
+                                        id="value-3"
+                                        value="value-3"
+                                    />
+                                    <label for="value-3"
+                                        >Мемориальный комплекс</label
+                                    >
+                                </div>
+                            </div>
+                            <div>
+                                <img src="img/img-38.jpg" alt="" />
+                                <div class="calculation-modal-radio">
+                                    <input
+                                        class="custom-radio"
+                                        name="monument"
+                                        type="radio"
+                                        id="value-4"
+                                        value="value-4"
+                                    />
+                                    <label for="value-4">Комбинированный</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="calculation-modal-step"
+                        style="display: none"
+                        data-step="3"
+                    >
+                        <h2>Требуется ли обустройство места захоронения?</h2>
+                        <div class="calculation-modal-grid-2">
+                            <div class="calculation-modal-radio">
+                                <input
+                                    class="custom-radio"
+                                    name="place"
+                                    type="radio"
+                                    id="value-5"
+                                    value="value-5"
+                                    checked
+                                />
+                                <label for="value-5"
+                                    >Нет, нужен только памятник</label
+                                >
+                            </div>
+                            <div class="calculation-modal-radio">
+                                <input
+                                    class="custom-radio"
+                                    name="place"
+                                    type="radio"
+                                    id="value-6"
+                                    value="value-6"
+                                />
+                                <label for="value-6">Да, требуется</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="calculation-modal-step"
+                        style="display: none"
+                        data-step="4"
+                    >
+                        <h2>Какой гранит вам больше подходит?</h2>
+                        <div class="granite-images">
+    <label>
+        <input type="radio" name="granite" value="value-1" checked />
+        <span><img src="img/img-27.jpg" /></span>
+        <p>Габбро-Диабаз</p>
+    </label>
+    <label>
+        <input type="radio" name="granite" value="value-2" />
+        <span><img src="img/img-28.jpg" /></span>
+        <p>Гранатовый Амфиболит</p>
+    </label>
+    <label>
+        <input type="radio" name="granite" value="value-3" />
+        <span><img src="img/img-29.jpg" /></span>
+        <p>Дымовский</p>
+    </label>
+    <label>
+        <input type="radio" name="granite" value="value-4" />
+        <span><img src="img/img-30.jpg" /></span>
+        <p>Лабрадорит</p>
+    </label>
+    <label>
+        <input type="radio" name="granite" value="value-5" />
+        <span><img src="img/img-31.jpg" /></span>
+        <p>Лезниковский</p>
+    </label>
+    <label>
+        <input type="radio" name="granite" value="value-6" />
+        <span><img src="img/img-32.jpg" /></span>
+        <p>Мансуровский</p>
+    </label>
+    <label>
+        <input type="radio" name="granite" value="value-7" />
+        <span><img src="img/img-33.jpg" /></span>
+        <p>Масловский</p>
+    </label>
+    <label>
+        <input type="radio" name="granite" value="value-8" />
+        <span><img src="img/img-34.jpg" /></span>
+        <p>Покостовский</p>
+    </label>
+    <label class="granite-images-hidden">
+        <input type="radio" name="granite" value="value-9" />
+        <span><img src="img/img-27.jpg" /></span>
+        <p>Габбро-Диабаз</p>
+    </label>
+    <label class="granite-images-hidden">
+        <input type="radio" name="granite" value="value-10" />
+        <span><img src="img/img-27.jpg" /></span>
+        <p>Габбро-Диабаз</p>
+    </label>
+    <label class="granite-images-hidden">
+        <input type="radio" name="granite" value="value-11" />
+        <span><img src="img/img-27.jpg" /></span>
+        <p>Габбро-Диабаз</p>
+    </label>
+</div>
+
+                    </div>
+                    <div
+                        class="calculation-modal-step"
+                        data-step="4"
+                        style="display: none"
+                    >
+                        <h2>Требуются ли дополнительные услуги?</h2>
+                        <div class="calculation-modal-grid">
+                            <div>
+                                <img src="img/img-39.jpg" alt="" />
+                                <div class="calculation-modal-radio">
+                                    <label class="custom-checkbox">
+                                        <input
+                                            type="checkbox"
+                                            name="additional-services-1"
+                                            value="value-1"
+                                        />
+                                        <span></span>
+                                        Гравировка фото
+                                    </label>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="img/img-40.jpg" alt="" />
+                                <div class="calculation-modal-radio">
+                                    <label class="custom-checkbox">
+                                        <input
+                                            type="checkbox"
+                                            name="additional-services-2"
+                                            value="value-2"
+                                        />
+                                        <span></span>
+                                        Фото на стекле
+                                    </label>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="img/img-41.jpg" alt="" />
+                                <div class="calculation-modal-radio">
+                                    <label class="custom-checkbox">
+                                        <input
+                                            type="checkbox"
+                                            name="additional-services-3"
+                                            value="value-3"
+                                        />
+                                        <span></span>
+                                        Фото на керамике
+                                    </label>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="img/img-42.jpg" alt="" />
+                                <div class="calculation-modal-radio">
+                                    <label class="custom-checkbox">
+                                        <input
+                                            type="checkbox"
+                                            name="additional-services-4"
+                                            value="value-4"
+                                        />
+                                        <span></span>
+                                        Цветник
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="calculation-modal-flex">
+                        <div>
+                            <p class="calculation-modal__small-text">
+                                Шаг 1 из 5
+                            </p>
+                            <div class="calculation-modal-progress">
+                                <div
+                                    class="calculation-modal-progress-block"
+                                ></div>
+                            </div>
+                        </div>
+                        <div class="calculation-modal-buttons">
+                            <button
+                                class="calculation-modal__btn icon-10"
+                            ></button>
+                            <button class="btn calculation-modal-btn">
+                                Следующий вопрос
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="calculation-modal__progress-2"
+                    style="display: none"
+                >
+                    <h2 class="calculation-modal__sub-title sub-title">
+                        Подождите, идет расчет
+                    </h2>
+                    <div class="calculation-modal-time">
+                        <div></div>
+                    </div>
+                </div>
+                <div class="calculation-modal-form" style="display: none">
+                    <div>
+                        <h3>Узнайте стоимость</h3>
+                        <p class="text">
+                            Оставьте свой номер телефона, наши специалисты
+                            свяжутся с вами в течение 15 минут и ответят на все
+                            ваши вопросы!
+                        </p>
+                    </div>
+                    <div>
+                        <label>
+                            Ваше имя
+                            <input type="text" name="name" />
+                        </label>
+                        <label>
+                            Телефон
+                            <input type="tel" name="tel" class="phone-input" />
+                        </label>
+                        <button
+                            type="submit"
+                            class="btn calculation-modal__submit-btn"
+                        >
+                            Отправить
+                        </button>
+                        <p class="calculation-modal__small-text">
+                            Отправляя свои данные вы даете согласие
+                            на их обработку в соответствии с
+                            <a href="#">политикой конфидециальности</a>
+                        </p>
+                    </div>
+                </div>
+            </form>
+            <div class="calculation-modal-thanks" style="display: none">
+                <h3>Заявка на расчет стоимости отправлена</h3>
+                <p class="text">Наш агент свяжется с вами в ближайшее время</p>
+                <button class="thanks__btn btn">Понятно</button>
+            </div>
+        </div>
+    </div>
+</div>
+
             <div class="popup"></div>
         </main>
         <footer class="footer">
@@ -648,5 +1004,6 @@
         <script src="js/swiper-bundle.min.js"></script>
         <script src="js/fancyselect.js"></script>
         <script src="js/script.js"></script>
+        <script src="js/calculation.js"></script>
     </body>
 </html>

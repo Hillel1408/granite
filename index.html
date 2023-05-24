@@ -4,12 +4,12 @@
         <title>granite</title>
         <meta charset="UTF-8" />
         <meta name="format-detection" content="telephone=no" />
-        <link rel="stylesheet" href="css/style.css" />
         <link rel="shortcut icon" href="favicon.ico" />
         <!-- <meta name="robots" content="noindex, nofollow"> -->
         <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
     </head>
     <body class="body">
         <header class="header" id="header">
@@ -170,6 +170,24 @@
                 <img src="img/img-1.jpg" alt="" />
             </div>
         </div>
+        <div class="slider-slide swiper-slide">
+            <div class="slider-content">
+                <div class="slider-content-wrapper">
+                    <h2>
+                        Изготовление и установка памятников в Москве и
+                        Московской области
+                    </h2>
+                    <p>
+                        Используем как природный гранит, так и бюджетный аналог
+                        – полимергранит
+                    </p>
+                    <a href="#" class="btn">Сделать заявку</a>
+                </div>
+            </div>
+            <div class="slider-img">
+                <img src="img/img-1.jpg" alt="" />
+            </div>
+        </div>
     </div>
     <div class="slider-buttons">
         <div class="slider__swiper-button-prev">
@@ -187,7 +205,9 @@
                 />
             </svg>
         </div>
+        <span>1</span>
         <div class="slider__swiper-scrollbar"></div>
+        <span class="count-slide"></span>
         <div class="slider__swiper-button-next">
             <svg
                 width="9"
@@ -208,6 +228,9 @@
 
             <div class="main-flex container">
                 <section class="sidebar">
+    <button class="sidebar__close-btn">
+        <img src="img/icon-3.svg" alt="" />
+    </button>
     <div class="sidebar-wrapper">
         <ul class="sidebar__list">
             <li class="sidebar__list-item">
@@ -481,7 +504,7 @@
 </div>
 
             </div>
-            <div class="best-offer-slide swiper-slide">
+            <div class="best-offer-slide swiper-slide best-offer-slide-hidden">
                 <div class="item-wrapper">
     <div class="item">
         <img src="img/img-2.jpg" alt="" />
@@ -663,6 +686,7 @@
             </div>
         </div>
     </div>
+    <button class="best-offer__btn">Показать больше</button>
 </section>
 
                     <section class="advantages">
@@ -1301,7 +1325,7 @@
             <div class="calculation-modal-thanks" style="display: none">
                 <h3>Заявка на расчет стоимости отправлена</h3>
                 <p class="text">Наш агент свяжется с вами в ближайшее время</p>
-                <button class="btn">Понятно</button>
+                <button class="thanks__btn btn">Понятно</button>
             </div>
         </div>
     </div>
@@ -1532,6 +1556,22 @@
         <script src="js/script.js"></script>
         <script src="js/calculation.js"></script>
         <script>
+            const bestOfferBtn = document.querySelector('.best-offer__btn');
+            const bestOfferHidden = document.querySelectorAll(
+                '.best-offer-slide-hidden'
+            );
+            const countSlide = document.querySelector('.count-slide');
+            const sliderSlide = document.querySelectorAll('.slider-slide');
+
+            countSlide.innerText = sliderSlide.length;
+
+            bestOfferBtn.addEventListener('click', function () {
+                bestOfferHidden.forEach((item) => {
+                    item.style.display = 'grid';
+                });
+                this.style.display = 'none';
+            });
+
             const swiper = new Swiper('.slider', {
                 direction: 'horizontal',
                 slidesPerView: 1,

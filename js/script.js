@@ -54,3 +54,16 @@ phoneInput.forEach((item) => {
         mask: '+{7}(000)000-00-00',
     });
 });
+
+const sidebarCloseBtn = document.querySelector('.sidebar__close-btn');
+
+sidebarCloseBtn.addEventListener('click', function () {
+    toggle(mobileSidebar);
+});
+
+const headerCalculationBtn = document.querySelector('.header__calculation-btn');
+
+headerCalculationBtn.addEventListener('click', function () {
+    toggle(headerNav);
+    toggle(calculationModal);
+});
