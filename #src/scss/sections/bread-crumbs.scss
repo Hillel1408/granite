@@ -1,0 +1,21 @@
+.bread-crumbs {
+    display: flex;
+    margin-top: 10px;
+    @media (max-width: 576px) {
+        margin-top: 8px;
+    }
+    li {
+        font-size: 14px;
+        line-height: 19px;
+        color: #949496;
+        a {
+            color: #949496;
+        }
+        &:not(:first-child) {
+            &:before {
+                content: '/';
+                margin-left: 5px;
+            }
+        }
+    }
+}
