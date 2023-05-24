@@ -63,7 +63,7 @@ calculationBtn.addEventListener('click', function (e) {
         showStepBlock(true);
         count = count + 1;
         calculationText.innerText = `Шаг ${count + 1} из 5`;
-        calculationProgressBlock.style.width = (count + 1) * 20 + '%';
+        calculationProgressBlock.style.width = count * 20 + '%';
     }
 });
 
@@ -72,7 +72,7 @@ calculationBtnPrev.addEventListener('click', function (e) {
     if (count > 0) {
         showStepBlock(false);
         calculationText.innerText = `Шаг ${count} из 5`;
-        calculationProgressBlock.style.width = count * 20 + '%';
+        calculationProgressBlock.style.width = (count - 1) * 20 + '%';
         count = count - 1;
     }
 });

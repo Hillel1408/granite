@@ -21,52 +21,56 @@
                         Вертикальный памятник на могилу ВГ-В-01
                     </h1>
                     <div class="product-flex">
-                        <div>
+                        <div class="product-column-1">
                             <img
                                 class="product-img"
                                 src="img/img-25.jpg"
                                 alt=""
                             />
-                            <ul class="product__list">
-                                <li class="product__list-item text icon-50">
-                                    Полировка всех сторон памятника!
-                                </li>
-                                <li class="product__list-item text icon-50">
-                                    Возможны любые размеры и индивидуальные
-                                    особенности памятника.
-                                </li>
-                                <li class="product__list-item text icon-50">
-                                    Фигурная художественная резка по камню.
-                                </li>
-                            </ul>
-                            @@include('./html/form.html')
-                            <div class="product__block">
-                                <h5 class="product__small-title">
-                                    Текстура карельского гранита
-                                </h5>
-                                <div class="product__block-img">
-                                    <img src="img/img-26.jpg" alt="" />
+                            <div class="product-info">
+                                <ul class="product__list">
+                                    <li class="product__list-item text icon-50">
+                                        Полировка всех сторон памятника!
+                                    </li>
+                                    <li class="product__list-item text icon-50">
+                                        Возможны любые размеры и индивидуальные
+                                        особенности памятника.
+                                    </li>
+                                    <li class="product__list-item text icon-50">
+                                        Фигурная художественная резка по камню.
+                                    </li>
+                                </ul>
+                                @@include('./html/form.html')
+                                <div class="product__block">
+                                    <h5 class="product__small-title">
+                                        Текстура карельского гранита
+                                    </h5>
+                                    <div class="product__block-img">
+                                        <img src="img/img-26.jpg" alt="" />
+                                    </div>
+                                </div>
+                                <div class="product__block">
+                                    <h5 class="product__small-title">
+                                        Купить памятник или заказать памятник у
+                                        нас – это недорого!
+                                    </h5>
+                                    <p class="text">
+                                        Памятник цена которого ниже чем у
+                                        остальных это реальность! Мы являемся
+                                        производителями, по этому можем
+                                        предложить самые качественные и в то же
+                                        время недорогие решения. Мы
+                                        автоматизировали большую часть
+                                        процессов, что значительно снизило цену
+                                        на сложные изделия. Только наша компания
+                                        может предложить высококачественные
+                                        памятники на могилу по самой низкой
+                                        цене!
+                                    </p>
                                 </div>
                             </div>
-                            <div class="product__block">
-                                <h5 class="product__small-title">
-                                    Купить памятник или заказать памятник у нас
-                                    – это недорого!
-                                </h5>
-                                <p class="text">
-                                    Памятник цена которого ниже чем у остальных
-                                    это реальность! Мы являемся производителями,
-                                    по этому можем предложить самые качественные
-                                    и в то же время недорогие решения. Мы
-                                    автоматизировали большую часть процессов,
-                                    что значительно снизило цену на сложные
-                                    изделия. Только наша компания может
-                                    предложить высококачественные памятники на
-                                    могилу по самой низкой цене!
-                                </p>
-                            </div>
                         </div>
-                        <div>
+                        <div class="product-column-2">
                             <div>
                                 <span class="product__price">40 500 ₽</span>
                                 <div class="product__buttons">
@@ -649,6 +653,22 @@
                 });
                 this.style.display = 'none';
             });
+
+            const productInfo = document.querySelector('.product-info');
+            const productColumn2 = document.querySelector('.product-column-2');
+            const productColumn1 = document.querySelector('.product-column-1');
+
+            const a = () => {
+                if (window.innerWidth <= 750) {
+                    productInfo.remove();
+                    productColumn2.append(productInfo);
+                }
+                if (window.innerWidth > 750) {
+                    productColumn1.append(productInfo);
+                }
+            };
+
+            window.addEventListener('resize', a);
 
             const productSwiper = new Swiper('.product-slider', {
                 direction: 'horizontal',
