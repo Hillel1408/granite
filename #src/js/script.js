@@ -60,3 +60,10 @@ const sidebarCloseBtn = document.querySelector('.sidebar__close-btn');
 sidebarCloseBtn.addEventListener('click', function () {
     toggle(mobileSidebar);
 });
+
+const headerCalculationBtn = document.querySelector('.header__calculation-btn');
+
+headerCalculationBtn.addEventListener('click', function () {
+    toggle(headerNav);
+    toggle(calculationModal);
+});

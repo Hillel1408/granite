@@ -94,3 +94,9 @@ costCalculation.addEventListener('click', function () {
 calculationModalClose.addEventListener('click', function () {
     calculationToggle();
 });
+
+const thanksBtn = document.querySelector('.thanks__btn');
+
+thanksBtn.addEventListener('click', function () {
+    calculationToggle();
+});
