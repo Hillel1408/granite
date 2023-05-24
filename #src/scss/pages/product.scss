@@ -148,6 +148,9 @@
         object-fit: cover;
         border: 1px solid #e5e5eb;
         margin-bottom: 24px;
+        @media (max-width: 750px) {
+            margin-bottom: 0;
+        }
         @media (max-width: 576px) {
             height: 440px;
         }
